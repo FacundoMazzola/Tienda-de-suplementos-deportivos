@@ -1,0 +1,666 @@
+/* Estilo general */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+/* Header */
+header {
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.logo {
+    max-width: 200px;
+    height: auto;
+    display: block;
+}
+
+.logo img {
+    height: 100%;
+    width: 180%;
+    margin-right: 0px;
+}
+
+/* Nav */
+.navbar {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    padding: 0.5rem 1rem;
+}
+
+.container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.navbar-brand {
+    font-size: 1.25rem;
+    color: #000;
+    text-decoration: none;
+}
+
+/* Botón hamburguesa */
+.navbar-toggler {
+    font-size: 1.25rem;
+    background: none;
+    border: none;
+    display: none;
+    cursor: pointer;
+}
+
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    background-color: #333;
+    mask: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.5 12a.5.5 0 0 1 0-1h13a.5.5 0 0 1 0 1h-13zm0-4.5a.5.5 0 0 1 0-1h13a.5.5 0 0 1 0 1h-13zm0-4.5a.5.5 0 0 1 0-1h13a.5.5 0 0 1 0 1h-13z"/></svg>') no-repeat center;
+    mask-size: contain;
+}
+
+/* Collapse */
+.collapse {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    color: #000;
+    text-decoration: none;
+    padding: 0.5rem;
+    display: inline-block;
+}
+
+.nav-link.active {
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #007bff;
+}
+
+.nav-link.disabled {
+    color: #6c757d;
+    pointer-events: none;
+    cursor: default;
+}
+
+/* Dropdown */
+.dropdown-toggle::after {
+    content: ' ▼';
+    font-size: 0.6rem;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 10rem;
+    top: 100%;
+    left: 0;
+    padding: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    z-index: 1000;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item {
+    padding: 0.5rem 1rem;
+    color: #000;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-item:hover {
+    background-color:  #0056b3;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+    border-radius: 0.25rem;
+}
+
+.dropdown-divider {
+    height: 1px;
+    margin: 0.5rem 0;
+    background-color: #e9ecef;
+    border: 0;
+}
+
+/* buscador */
+form.d-flex {
+    display: flex;
+    gap: 0.5rem;
+}
+
+form.d-flex input {
+    padding: 0.375rem 0.75rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}
+
+form.d-flex button {
+    padding: 0.375rem 0.75rem;
+    border: 1px solid #f2f3f5;
+    background-color: transparent;
+    color: #121312;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+form.d-flex button:hover {
+    background-color:#0056b3;
+    color: #fff;
+    transition: background-color 0.4s ease;
+    border-radius: 0.25rem;
+    border: 1px solid #0056b3;
+}
+
+/* carrito */
+
+.carrito a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #555;
+    position: relative;
+}
+
+.carrito img {
+    height: 50px; /* Ajusta el tamaño del icono del carrito */
+    width: auto; /* Mantiene la proporción de la imagen */
+}
+
+.carrito span#cantidad-carrito {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #dc3545; /* Un color de alerta */
+    color: #fff;
+    border-radius: 50%;
+    padding: 5px 8px;
+    font-size: 0.8em;
+}
+
+/* Estilos para el contenido principal */
+main {
+    display: block;
+    margin-top: 0; /* para eliminar el margen superior por defecto */
+}
+
+/* Sección Hero */
+#hero {
+    background-color: #e9ecef;
+    padding: 0; /* Quite el padding para que la imagen ocupe todo */
+    text-align: center;
+    position: relative;
+    min-height: 75vh;
+    overflow: hidden; /* Para contener la imagen */
+}
+
+.hero-content {
+    position: absolute;
+    max-width: 2000px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    color: #fff; /* Cambiado a blanco para contraste */
+}
+
+.hero-content p {
+    font-size: 1.1em;
+    color: #eee; /* Cambiado a gris claro para contraste */
+    margin-bottom: 25px;
+}
+
+.boton-principal {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.boton-principal:hover {
+    background-color: #0056b3;
+}
+
+.hero-image {
+    /* Contenedor de la imagen */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    opacity: 0.9;
+}
+
+/* Sección de Productos */
+.seccion-productos {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.seccion-productos h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.lista-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.producto {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* para que haya una transición suave */
+}
+
+.producto:hover {
+    transform: translateY(-5px); /* Eleva la tarjeta al pasar el cursor */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.producto img {
+    max-width: 50%; /* aqui modifico la dimension de la imagen del producto*/
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.producto h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.producto .descripcion {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.producto .precio {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #28a745; /* Un color para el precio */
+    margin-bottom: 15px;
+}
+
+.boton-comprar {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.boton-comprar:hover {
+    background-color: #1e7e34;
+}
+
+.ver-mas {
+    display: inline-block;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.ver-mas:hover {
+    color: #0056b3;
+}
+
+/* Sección de Ofertas */
+.seccion-ofertas {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.seccion-ofertas h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.lista-ofertas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.oferta {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.oferta img {
+    max-width: 50%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.oferta h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.oferta .precio-antes {
+    color: #777;
+    text-decoration: line-through;
+    margin-bottom: 5px;
+}
+
+.oferta .precio-ahora {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #dc3545;
+    /* Un color para las ofertas */
+    margin-bottom: 15px;
+}
+
+/* Sección Sobre Nosotros */
+.seccion-nosotros {
+    background-color: #e9ecef;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.seccion-nosotros h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.seccion-nosotros p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Sección Contacto */
+.seccion-contacto {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.seccion-contacto h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.seccion-contacto p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.info-contacto {
+    background-color: #f8f9fa; /* Un fondo suave para destacar la información */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px; /* Espacio entre el formulario y la información de contacto */
+    text-align: left; /* Alinear el texto a la izquierda para mejor legibilidad */
+    max-width: 500px; /* Mismo ancho que el formulario para consistencia */
+    margin-left: auto;
+    margin-right: auto;
+}
+.info-contacto h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.seccion-contacto form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left; /* Alinear etiquetas o placeholders a la izquierda si es necesario */
+}
+
+.seccion-contacto input[type="text"],
+.seccion-contacto input[type="email"],
+.seccion-contacto textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%; /* Asegurar que los inputs ocupen el ancho disponible */
+    box-sizing: border-box; /* Incluir padding y border en el ancho total */
+}
+.seccion-contacto input[type="tel"] {
+    margin-bottom: 5px; /* Pequeño ajuste si es necesario */
+}
+
+.seccion-contacto textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.seccion-contacto button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.seccion-contacto button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Pie de página (footer) */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer nav li {
+    margin: 0 15px;
+}
+
+footer nav a {
+    color: #eee;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer nav a:hover {
+    color: #fff;
+}
+
+/*Estilos para el boton de whatsapp*/
+.whatsapp-link {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    /* Color de WhatsApp */
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    font-size: 24px;
+    z-index: 1000;
+    /* Asegura que esté por encima de otros elementos */
+}
+
+/*Estilos para la imagen del icono de whatsapp*/
+.whatsapp-img {
+    width: 35px;
+    height: 35px;
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s ease;
+}
+
+/* Efecto hover para el icono de WhatsApp */
+.whatsapp-link:hover .whatsapp-img {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el cursor */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/*Responsividad */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    header {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .logo img {
+        height: 150px;
+        /* Reducir tamaño del logo */
+        width: auto;
+        /* Mantener proporción */
+        margin-bottom: 10px;
+    }
+
+    .navbar-toggler {
+        display: block;
+    }
+
+    .collapse {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .collapse.show {
+        display: flex;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+    }
+
+    .nav-item {
+        width: 100%;
+    }
+
+    form.d-flex {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    form.d-flex input,
+    form.d-flex button {
+        width: 100%;
+    }
+
+    .info-contacto {
+        text-align: center; /* Centrar en móviles si se prefiere */
+    }
+
+    #hero {
+        min-height: 500px;
+        /* Reducir altura del hero */
+    }
+
+    .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .lista-productos,
+    .lista-ofertas {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        /* Mantiene la grilla adaptable, ajusta minmax según necesites */
+        gap: 20px;
+    }
+}
