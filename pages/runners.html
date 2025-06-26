@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suplementos para Runner - [Nombre de tu Tienda]</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="/">
+                <img src="/img/logo-apex.png" alt="Logo de Tu Tienda">
+            </a>
+        </div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html">Productos</a>
+                        <li>
+                            <a class="nav-link" href="ofertas.html">Ofertas</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="runners.html">Runners</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="indumentaria.html">Indumentaria</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Info
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="nosotros.html">Sobre Nosotros</a></li>
+                                <li><a class="dropdown-item" href="contactos.html">Contactanos</a></li>
+                                <li>
+                            </ul>
+                        </li>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="carrito">
+            <a href="/carrito">
+                <img src="/img/icono-carrito.jpeg" alt="Carrito de Compras">
+                <span id="cantidad-carrito">0</span>
+            </a>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="listado-productos-runner">
+            <h2>Explora todos nuestros productos para Runner</h2>
+            <div class="filtros-productos-runner">
+                <label for="ordenar-runner">Ordenar por:</label>
+                <select id="ordenar-runner">
+                    <option value="relevancia">Relevancia</option>
+                    <option value="precio-asc">Precio: Menor a Mayor</option>
+                    <option value="precio-desc">Precio: Mayor a Menor</option>
+                    <option value="novedad">Novedad</option>
+                </select>
+            </div>
+
+            <div class="cuadricula-productos-runner">
+                <article class="tarjeta-producto-runner">
+                    <a href="detalle-producto.html?id=gel-energetico">
+                        <img src="/img/Geles-Energéticos-Endurance-apex.png" alt="Geles Energéticos Endurance">
+                        <h3>Geles Energéticos de Rápida Absorción</h3>
+                    </a>
+                    <p class="descripcion">Fuente rápida de energía para tus carreras largas.</p>
+                    <div class="calificacion-producto">
+                    </div>
+                    <p class="precio">$8.500</p>
+                    <button class="btn-agregar-carrito">Agregar al Carrito</button>
+                </article>
+
+                <article class="tarjeta-producto-runner">
+                    <a href="detalle-producto.html?id=bcaa-recuperacion">
+                        <img src="/img/bcca-apex.png" alt="BCAA para Recuperación Muscular">
+                        <h3>BCAA's Esenciales para la Recuperación</h3>
+                    </a>
+                    <p class="descripcion">Minimiza el daño muscular y acelera la recuperación post-entreno.</p>
+                    <div class="calificacion-producto">
+                    </div>
+                    <p class="precio">$25.000</p>
+                    <button class="btn-agregar-carrito">Agregar al Carrito</button>
+                </article>
+
+                <article class="tarjeta-producto-runner">
+                    <a href="detalle-producto.html?id=electrolitos-hidratacion">
+                        <img src="/img/electrolitos-apex.png" alt="Electrolitos para Hidratación">
+                        <h3>Electrolitos para Hidratación Óptima</h3>
+                    </a>
+                    <p class="descripcion">Reposición de minerales perdidos por el sudor durante el ejercicio.</p>
+                    <div class="calificacion-producto">
+                    </div>
+                    <p class="precio">$15.000</p>
+                    <button class="btn-agregar-carrito">Agregar al Carrito</button>
+                </article>
+
+                <article class="tarjeta-producto-runner">
+                    <a href="detalle-producto.html?id=proteina-recovery-runner">
+                        <img src="/img/Proteína-de-Suero-Recovery-Runner.png" alt="Proteína de Suero Recovery Runner">
+                        <h3>Proteína Whey Recovery para Corredores</h3>
+                    </a>
+                    <p class="descripcion">Ayuda a reparar y construir músculo después de entrenamientos intensos.</p>
+                    <div class="calificacion-producto">
+                    </div>
+                    <p class="precio">$32.000</p>
+                    <button class="btn-agregar-carrito">Agregar al Carrito</button>
+                </article>
+
+            </div>
+        </section>
+
+        ---
+
+    </main>
+
+    <footer>
+        <div class="contenido-pie-pagina">
+            <div class="seccion-pie-pagina-nosotros">
+                <h3>Sobre Nosotros</h3>
+                <p>Tu mejor aliado en suplementación deportiva. ¡Alcanza tus metas con nuestros productos de calidad!
+                </p>
+            </div>
+            <div class="seccion-pie-pagina-contacto">
+                <h3>Contacto</h3>
+                <p><i class="fas fa-map-marker-alt"></i> González Catán, Buenos Aires, Argentina</p>
+                <p><i class="fas fa-phone"></i> +54 9 11 1234 5678</p>
+                <p><i class="fas fa-envelope"></i> info@tutienda.com</p>
+            </div>
+        </div>
+        <div class="pie-pagina-inferior">
+            <p>&copy; 2025 [Nombre de tu Tienda]. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

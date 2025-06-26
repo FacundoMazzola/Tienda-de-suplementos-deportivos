@@ -1,0 +1,1519 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Lato:wght@300;400;700&display=swap');
+/* Estilo general */
+body {
+    font-family: poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5; /* Un color de fondo suave */
+    color: #333; /* Color de texto por defecto */
+    font-size: 16px; /* Tamaño de fuente estándar */
+    line-height: 1.5; /* Altura de línea estándar */
+    -webkit-font-smoothing: antialiased; /* Mejora la suavidad de las fuentes en WebKit */
+    -moz-osx-font-smoothing: grayscale; /* Mejora la suavidad de las fuentes en Firefox */
+    box-sizing: border-box; /* Incluye padding y border en el ancho y alto de los elementos */
+}
+
+.container {
+    max-width: 1000px;
+    margin:auto;
+    padding: 5% 10%;
+}
+
+/* Header */
+header {
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    padding: 10px 20px;
+    z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
+    margin-bottom: 20px; /* Espacio debajo del header */
+    border-bottom: 1px solid #e0e0e0; /* Línea sutil debajo del header */
+    font-family: poppins, sans-serif; /* Fuente para el header */
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+    align-items: center; /* Alinea los elementos verticalmente */
+    padding: 10px 20px; /* Espaciado interno del header */
+    gap: 20px; /* Espacio entre los elementos del header */
+    justify-content: space-between; /* Alinea los elementos horizontalmente */
+    background-color: #ffffff; /* Fondo blanco para el header */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Bordes redondeados para un toque moderno */
+}
+
+/* Estilos para el logo */
+.logo {
+    flex-shrink: 0; /* Evita que el logo se achique */
+}
+
+.logo img {
+    max-height: 100px; /* Ajusta la altura máxima del logo */
+    width: auto; /* Mantiene la proporción del logo */
+}
+
+/* Nav */
+.navbar {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    flex-grow: 1;
+    margin: 0 20px  ;
+    padding: 0.5rem 1rem;
+    font-family: sans-serif;
+}
+
+.container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+/* Botón hamburguesa */
+.navbar-toggler {
+    font-size: 1.25rem;
+    background: none;
+    border: none;
+    display: none;
+    cursor: pointer;
+
+}
+
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    background-color: #333;
+    mask-size: contain;
+    mask-image: url('../img/menu-de-hamburguesas.png'); /* Ruta al icono de hamburguesa */
+    mask-repeat: no-repeat;
+    mask-position: center;
+}
+
+/* Collapse */
+.collapse {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    position: relative;
+    display: inline-block;
+    margin-right: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #000; /* Color del texto de los enlaces */
+    transition: color 0.3s ease;
+}
+
+.nav-link {
+    color: #000;
+    text-decoration: none;
+    padding: 0.5rem;
+    display: inline-block;
+}
+
+.nav-link.active {
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #007bff;
+    transition: color 0.3s ease;
+    text-decoration: none;
+    border-bottom: 1px solid #007bff;
+    padding-bottom: 2px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.nav-link.disabled {
+    color: #6c757d;
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+/* Dropdown */
+.dropdown-toggle::after {
+    content: ' ▼';
+    font-size: 0.6rem;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 10rem;
+    top: 100%;
+    left: 0;
+    padding: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    z-index: 1000;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    position: relative;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.dropdown-item {
+    padding: 0.5rem 1rem;
+    color: #000;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    border-bottom: 1px solid #ccc;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+    color: #007bff;
+    transition: background-color 0.3s ease;
+    border-radius: 0.25rem;
+    border: 1px solid #007bff;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    color: #000;
+    text-decoration: none;
+}
+
+.dropdown-divider {
+    height: 1px;
+    margin: 0.5rem 0;
+    background-color: #e9ecef;
+    border: 0;
+    border-radius: 0.25rem;
+    width: 100%;
+}
+
+/* buscador */
+form.d-flex {
+    display: flex;
+    gap: 0.5rem;
+}
+
+form.d-flex input {
+    padding: 0.375rem 0.75rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}
+
+form.d-flex button {
+    padding: 0.375rem 0.75rem;
+    border: 1px solid #f2f3f5;
+    background-color: transparent;
+    color: #121312;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+form.d-flex button:hover {
+    background-color:#0056b3;
+    color: #fff;
+    transition: background-color 0.4s ease;
+    border-radius: 0.25rem;
+    border: 1px solid #0056b3;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 0.375rem 0.75rem;
+}
+
+/* carrito */
+
+.carrito a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #555;
+    position: relative;
+}
+
+.carrito img {
+    height: 50px; /* Ajusta el tamaño del icono del carrito */
+    width: auto; /* Mantiene la proporción de la imagen */
+}
+
+.carrito span#cantidad-carrito {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #dc3545; /* Un color de alerta */
+    color: #fff;
+    border-radius: 50%;
+    padding: 5px 8px;
+    font-size: 0.8em;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 20px; /* Ancho mínimo para el badge */
+}
+
+/* Estilos para el contenido principal */
+main {
+    display: block;
+    margin-top: 0; /* para eliminar el margen superior por defecto */
+}
+
+/* Sección Hero */
+#hero {
+    background-color: #e9ecef;
+    padding: 0; /* Quite el padding para que la imagen ocupe todo */
+    text-align: center;
+    position: relative;
+    min-height: 75vh;
+    overflow: hidden; /* Para contener la imagen */
+}
+
+.hero-content {
+    position: absolute;
+    max-width: 2000px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.432); /* Fondo semitransparente */
+    color: #fff; /* Cambiado a blanco para contraste */
+    text-align: center;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    color: #fff; /* Cambiado a blanco para contraste */
+}
+
+.hero-content p {
+    font-size: 1.1em;
+    color: #eee; /* Cambiado a gris claro para contraste */
+    margin-bottom: 25px;
+}
+
+.boton-principal {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.boton-principal:hover {
+    background-color: #0056b3;
+    transition: background-color 0.3s ease;
+    color: #fff; /* Asegura que el texto siga siendo blanco al pasar el cursor */
+    text-decoration: none; /* Elimina el subrayado al pasar el cursor */
+    font-size: 1.1rem; /* Aumenta ligeramente el tamaño del texto al pasar el cursor */
+    padding: 12px 25px; /* Mantiene el padding al pasar el cursor */
+    border-radius: 5px; /* Mantiene los bordes redondeados al pasar el cursor */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Añade una sombra al botón al pasar el cursor */
+}
+
+.hero-image {
+    /* Contenedor de la imagen */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    opacity: 0.9;
+}
+
+/* Sección de Productos */
+.seccion-productos {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.seccion-productos h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.lista-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.producto {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* para que haya una transición suave */
+}
+
+.producto:hover {
+    transform: translateY(-5px); /* Eleva la tarjeta al pasar el cursor */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    /* Sombra más pronunciada al pasar el cursor */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    text-decoration: none; /* Elimina el subrayado al pasar el cursor */
+    font-size: 1.1rem; /* Aumenta ligeramente el tamaño del texto al pasar el cursor */
+    padding: 20px; /* Mantiene el padding al pasar el cursor */
+    border-radius: 8px; /* Mantiene los bordes redondeados al pasar el cursor */
+    background-color: #f8f9fa; /* Cambia el color de fondo al pasar el cursor */
+    color: #333; /* Cambia el color del texto al pasar el cursor */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease; /* Añade transición para el color de fondo y texto */
+}
+
+.producto img {
+    max-width: 50%; /* aqui modifico la dimension de la imagen del producto*/
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.producto h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.producto .descripcion {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.producto .precio {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #28a745; /* Un color para el precio */
+    margin-bottom: 15px;
+}
+
+.boton-comprar {
+    background-color: #1e7e34;
+    transition: background-color 0.3s ease;
+    color: #fff; /* Asegura que el texto siga siendo blanco al pasar el cursor */
+    text-decoration: none; /* Elimina el subrayado al pasar el cursor */
+    font-size: 1.1rem; /* Aumenta ligeramente el tamaño del texto al pasar el cursor */
+    padding: 10px 20px; /* Mantiene el padding al pasar el cursor */
+    border-radius: 5px; /* Mantiene los bordes redondeados al pasar el cursor */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Añade una sombra al botón al pasar el cursor */
+    text-decoration: none; /* Elimina el subrayado al pasar el cursor */
+    font-weight: bold; /* Mantiene el texto en negrita al pasar el cursor */
+}
+
+.boton-comprar:hover {
+    background-color: #1e7e34;
+    transition: background-color 0.3s ease;
+    color: #fff; /* Asegura que el texto siga siendo blanco al pasar el cursor */
+    text-decoration: none; /* Elimina el subrayado al pasar el cursor */
+    font-size: 1.1rem; /* Aumenta ligeramente el tamaño del texto al pasar el cursor */
+    padding: 10px 20px; /* Mantiene el padding al pasar el cursor */
+    border-radius: 5px; /* Mantiene los bordes redondeados al pasar el cursor */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Añade una sombra al botón al pasar el cursor */
+    text-decoration: none; /* Elimina el subrayado al pasar el cursor */
+    font-weight: bold; /* Mantiene el texto en negrita al pasar el cursor */
+}
+
+/* Sección de Oferta imperdible */
+.seccion-ofertas {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.seccion-ofertas h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.lista-ofertas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.oferta {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.oferta img {
+    max-width: 50%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.oferta h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.oferta .precio-antes {
+    color: #777;
+    text-decoration: line-through;
+    margin-bottom: 5px;
+}
+
+.oferta .precio-ahora {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #dc3545;
+    /* Un color para las ofertas */
+    margin-bottom: 15px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.oferta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada al pasar el cursor */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    text-decoration: none; /* Elimina el subrayado al pasar el cursor */
+    font-size: 1.1rem; /* Aumenta ligeramente el tamaño del texto al pasar el cursor */
+    padding: 20px; /* Mantiene el padding al pasar el cursor */
+    border-radius: 8px; /* Mantiene los bordes redondeados al pasar el cursor */
+    background-color: #f8f9fa; /* Cambia el color de fondo al pasar el cursor */
+    color: #333; /* Cambia el color del texto al pasar el cursor */
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease,
+                background-color 0.3s ease,
+                color 0.3s ease; /* Añade transición para el color de fondo y texto */
+    animation: fadeIn 0.5s ease-in-out; /* Añade una animación de aparición suave */
+    text-decoration: none; /* Elimina el subrayado al pasar el cursor */
+    font-weight: bold; /* Mantiene el texto en negrita al pasar el cursor */
+    border-radius: 8px; /* Mantiene los bordes redondeados al pasar el cursor */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Añade una sombra al pasar el cursor */
+}
+
+/* Sección Sobre Nosotros */
+
+.seccion-nosotros {
+    background-color: #ffffff; /* Fondo blanco para la sección */
+    padding: 60px 40px; /* Mucho padding para que el contenido respire */
+    border-radius: 15px; /* Bordes ligeramente redondeados para un toque moderno */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* Sombra suave para un efecto de elevación */
+    text-align: center; /* Centra el texto dentro de la sección */
+    margin-bottom: 40px; /* Espacio debajo de la sección */
+    animation: fadeIn 1s ease-out; /* Animación de aparición suave */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.seccion-nosotros h2 {
+    font-size: 3.2em; /* Tamaño de fuente grande para el título */
+    color: #007bff; /* Un color primario vibrante (azul de Bootstrap) */
+    margin-bottom: 30px; /* Espacio debajo del título */
+    position: relative; /* Para el pseudo-elemento */
+    padding-bottom: 15px; /* Espacio para la línea decorativa */
+    letter-spacing: 1px; /* Pequeño espaciado entre letras */
+}
+
+.seccion-nosotros h2::after {
+    content: ''; /* Contenido para el pseudo-elemento */
+    position: absolute;
+    bottom: 0;
+    left: 50%; /* Centra la línea */
+    transform: translateX(-50%); /* Ajusta el centrado */
+    width: 80px; /* Ancho de la línea */
+    height: 4px; /* Grosor de la línea */
+    background-color: #28a745; /* Un color secundario (verde de Bootstrap) */
+    border-radius: 2px; /* Bordes redondeados para la línea */
+}
+
+.seccion-nosotros p {
+    font-size: 1.15em; /* Tamaño de fuente ligeramente más grande para los párrafos */
+    color: #555; /* Color de texto un poco más suave */
+    margin-bottom: 25px; /* Espacio entre párrafos */
+    max-width: 800px; /* Limita el ancho de los párrafos para mejor legibilidad */
+    margin-left: auto; /* Centra los párrafos */
+    margin-right: auto; /* Centra los párrafos */
+}
+/* --- Footer --- */
+footer {
+    background-color: #343a40; /* Fondo oscuro para el footer (gris de Bootstrap) */
+    color: #f8f9fa; /* Texto claro */
+    text-align: center; /* Centra el texto */
+    padding: 30px 20px; /* Espaciado interno */
+    font-size: 0.9em; /* Tamaño de fuente un poco más pequeño */
+    border-top: 1px solid #495057; /* Borde superior sutil */
+}
+
+footer p {
+    margin: 0; /* Elimina el margen predeterminado del párrafo en el footer */
+}
+
+/* seccion contactos*/
+
+
+/*Seccion Ofertas*/
+/* --- Sección Hero Ofertas --- */
+.hero-ofertas {
+    background: linear-gradient(rgba(0, 0, 0, 0.123), rgba(243, 236, 236, 0.055)), url('../img/banner-ofertas.png') no-repeat center center/cover;
+    position: relative;
+    color: white(--color-claro); 
+    padding: 80px 20px;
+    text-align: center;
+    border-radius: var(--border-radius);
+    margin-bottom: 40px;
+    animation: fadeIn 0.5s ease-in-out; /* Animación de aparición suave */
+}
+
+.hero-ofertas h1 {
+    color: floralwhite; /* Cambiado a un color claro para contraste */
+    font-family: poppins, sans-serif;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para mejorar la legibilidad */
+    font-size: 2.8em;
+    margin-bottom: 15px;
+}
+
+.hero-ofertas p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: white; /* Cambiado a un color claro para contraste */
+    font-family: poppins, sans-serif;
+    font-weight: 300;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Sombra para mejorar la legibilidad */
+}
+
+.btn-cta {
+    background-color: white; /* Cambiado a blanco para contraste */
+    color: rgb(255, 255, 255) (--color-claro);
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición para hover */
+}
+.btn-cta:hover {
+    background-color:rgba(4, 0, 255, 0.466) ; /* Cambia el color de fondo al pasar el cursor */
+    transform: translateY(-3px); /* Efecto de "levantar" al pasar el cursor */
+    text-decoration: none; /* Elimina el subrayado al pasar el cursor */
+    font-size: 1.1rem; /* Aumenta ligeramente el tamaño del texto al pasar el cursor */
+    padding: 15px 30px; /* Mantiene el padding al pasar el cursor */
+    border-radius: var(--border-radius); /* Mantiene los bordes redondeados al pasar el cursor */
+}
+
+/* --- Sección de Ofertas Destacadas (Grid) --- */
+.grid-ofertas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive Grid */
+    gap: 30px;
+    justify-content: center;
+}
+
+.tarjeta-oferta {
+    background-color: var(--color-claro);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición para el hover */
+}
+
+.tarjeta-oferta:hover {
+    transform: translateY(-8px); /* Efecto de "levantar" */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* Sombra más pronunciada */
+}
+
+.tarjeta-oferta img {
+    max-width: 100%;
+    height: 200px; /* Altura fija para uniformidad */
+    object-fit: contain; /* Asegura que la imagen se vea completa */
+    border-radius: var(--border-radius);
+    margin-bottom: 15px;
+}
+
+.tarjeta-oferta h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: var(--color-primario);
+}
+
+.tarjeta-oferta .precio-original {
+    text-decoration: line-through;
+    color: var(--color-secundario);
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+.tarjeta-oferta .precio-oferta {
+    font-size: 1.5em;
+    color: var(--color-acento);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.tarjeta-oferta .precio-oferta span {
+    font-size: 1.1em; /* Ajuste para el número del precio */
+}
+
+.tarjeta-oferta .etiqueta-oferta {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: var(--color-error); /* O un color llamativo */
+    color: var(--color-claro);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn-agregar {
+    background-color: #1e7e34;
+    transition: background-color 0.3s ease;
+    color: #fff; /* Asegura que el texto siga siendo blanco al pasar el cursor */
+    text-decoration: none; /* Elimina el subrayado al pasar el cursor */
+    font-size: 1.1rem; /* Aumenta ligeramente el tamaño del texto al pasar el cursor */
+    padding: 10px 20px; /* Mantiene el padding al pasar el cursor */
+    border-radius: 5px; /* Mantiene los bordes redondeados al pasar el cursor */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Añade una sombra al botón al pasar el cursor */
+    text-decoration: none; /* Elimina el subrayado al pasar el cursor */
+    font-weight: bold; /* Mantiene el texto en negrita al pasar el cursor */
+}
+.btn-agregar:hover {
+    background-color: #1e7e34; /* Cambia el color de fondo al pasar el cursor */
+    transform: translateY(-3px); /* Efecto de "levantar" al pasar el cursor */
+    text-decoration: none; /* Elimina el subrayado al pasar el cursor */
+    font-size: 1.1rem; /* Aumenta ligeramente el tamaño del texto al pasar el cursor */
+    padding: 10px 20px; /* Mantiene el padding al pasar el cursor */
+    border-radius: 5px; /* Mantiene los bordes redondeados al pasar el cursor */
+}
+
+/* --- Ofertas por Categoría --- */
+.categorias-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.categoria-item {
+    text-align: center;
+    background-color: var(--color-claro);
+    padding: 15px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.categoria-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.categoria-item img {
+    width: 80px; /* Tamaño de los iconos de categoría */
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%; /* Para que sean circulares */
+    margin-bottom: 10px;
+}
+
+.categoria-item p {
+    font-weight: 600;
+    color: var(--color-oscuro);
+}
+/* Sección de Runners */
+
+
+.migas-de-pan-runner { 
+    font-size: 0.9em;
+    color: var(--color-secundario);
+    margin-top: 15px;
+}
+
+.migas-de-pan-runner a { 
+    color: var(--color-oscuro);
+    text-decoration: underline;
+}
+
+.migas-de-pan-runner a:hover { 
+    color: var(--color-primario);
+}
+
+/* Filtros y opciones de ordenación de productos */
+.filtros-productos-runner { 
+    text-align: right;
+    margin-bottom: 30px;
+    padding: 10px 0;
+}
+
+.filtros-productos-runner label { 
+    margin-right: 10px;
+    font-weight: 600;
+    color: var(--color-oscuro);
+}
+
+.filtros-productos-runner select { 
+    padding: 8px 12px;
+    border: 1px solid #ced4da;
+    border-radius: var(--border-radius);
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.filtros-productos-runner select:focus { 
+    outline: none;
+    border-color: var(--color-primario);
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Cuadrícula de productos */
+.cuadricula-productos-runner { /* Renombrado */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    justify-content: center;
+}
+
+.tarjeta-producto-runner { /* Renombrado */
+    background-color: var(--color-claro);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-producto-runner:hover { /* Renombrado */
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.tarjeta-producto-runner a { /* Renombrado */
+    color: inherit;
+}
+
+.tarjeta-producto-runner img { /* Renombrado */
+    max-width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: var(--border-radius);
+    margin-bottom: 15px;
+}
+
+.tarjeta-producto-runner h3 { /* Renombrado */
+    font-size: 1.3em;
+    margin-bottom: 8px;
+    color: var(--color-primario);
+}
+
+.tarjeta-producto-runner .descripcion { /* Renombrado */
+    font-size: 0.9em;
+    color: var(--color-secundario);
+    margin-bottom: 15px;
+    min-height: 40px;
+}
+
+.calificacion-producto { /* Renombrado */
+    color: #ffc107;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.calificacion-producto i { /* Renombrado */
+    margin-right: 2px;
+}
+
+.tarjeta-producto-runner .precio { /* Renombrado */
+    font-size: 1.6em;
+    color: var(--color-oscuro);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.btn-agregar-carrito{
+    background-color: #1e7e34;
+    transition: background-color 0.3s ease;
+    color: #fff; /* Asegura que el texto siga siendo blanco al pasar el cursor */
+    text-decoration: none; /* Elimina el subrayado al pasar el cursor */
+    font-size: 1.1rem; /* Aumenta ligeramente el tamaño del texto al pasar el cursor */
+    padding: 10px 20px; /* Mantiene el padding al pasar el cursor */
+    border-radius: 5px; /* Mantiene los bordes redondeados al pasar el cursor */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Añade una sombra al botón al pasar el cursor */
+    text-decoration: none; /* Elimina el subrayado al pasar el cursor */
+    font-weight: bold; /* Mantiene el texto en negrita al pasar el cursor */
+}
+
+.btn-agregar-carrito:hover {
+    background-color: #1e7e34; /* Cambia el color de fondo al pasar el cursor */
+    transform: translateY(-3px); /* Efecto de "levantar" al pasar el cursor */
+    text-decoration: none; /* Elimina el subrayado al pasar el cursor */
+    font-size: 1.1rem; /* Aumenta ligeramente el tamaño del texto al pasar el cursor */
+    padding: 10px 20px; /* Mantiene el padding al pasar el cursor */
+    border-radius: 5px; /* Mantiene los bordes redondeados al pasar el cursor */
+}
+
+/* seccion indumentaria */
+
+.contenedor {
+    max-width: 1200px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centrar el contenedor */
+    padding: 0 20px; /* Espaciado lateral interno */
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50; /* Un color oscuro para los títulos */
+    margin-bottom: 20px;
+    font-size: 2.5em; /* Tamaño de fuente para el título principal */
+}
+
+.texto-introductorio {
+    text-align: center;
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 50px 0;
+}
+
+/* --- Categorías Destacadas --- */
+.categorias-indumentaria {
+    margin-bottom: 60px;
+}
+
+.categorias-indumentaria h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.cuadricula-categorias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Columnas responsivas */
+    gap: 30px; /* Espacio entre categorías */
+    justify-content: center;
+}
+
+.item-categoria {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none; /* Quitar subrayado del enlace */
+    color: #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto hover */
+}
+
+.item-categoria:hover {
+    transform: translateY(-5px); /* Pequeño levantamiento al pasar el mouse */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.item-categoria img {
+    width: 100%;
+    height: 200px; /* Altura fija para las imágenes de categoría */
+    object-fit: cover; /* Recortar la imagen para que cubra el área */
+    display: block;
+}
+
+.item-categoria h3 {
+    font-size: 1.4em;
+    color: #3498db; /* Color de marca o un azul vibrante */
+    padding: 15px 10px;
+    margin: 0;
+}
+
+/* --- Sección de Filtros --- */
+.filtros-indumentaria {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.filtros-indumentaria h3 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.opciones-filtro {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los filtros se envuelvan en pantallas pequeñas */
+    gap: 20px; /* Espacio entre los elementos del filtro */
+    justify-content: center;
+    align-items: center;
+}
+
+.opciones-filtro select {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #555;
+    background-color: #fefefe;
+    outline: none; /* Quita el borde de enfoque por defecto */
+    min-width: 150px; /* Ancho mínimo para los selectores */
+}
+
+.opciones-filtro select:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+.btn-aplicar-filtros {
+    background-color: #3498db; /* Color principal de tu marca */
+    color: #fff;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-aplicar-filtros:hover {
+    background-color: #2980b9; /* Un tono más oscuro al pasar el mouse */
+    transform: translateY(-2px);
+}
+
+/* ---  Listado de Productos --- */
+.listado-productos {
+    margin-bottom: 60px;
+}
+
+.listado-productos h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.cuadricula-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Columnas responsivas */
+    gap: 30px; /* Espacio entre productos */
+    justify-content: center;
+}
+
+.tarjeta-producto {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 20px; /* Espacio interno inferior */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.tarjeta-producto a {
+    text-decoration: none;
+    color: inherit; /* Hereda el color del texto de la tarjeta */
+}
+
+.tarjeta-producto img {
+    width: 100%;
+    height: 250px; /* Altura fija para las imágenes de producto */
+    object-fit: cover;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.tarjeta-producto h3 {
+    font-size: 1.3em;
+    color: #2c3e50;
+    margin-bottom: 5px;
+    padding: 0 15px;
+}
+
+.marca-producto {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.precio-producto {
+    font-size: 1.5em;
+    color: #e74c3c; /* Un color llamativo para el precio */
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.btn-agregar-carrito {
+    background-color: #1e7e34;
+    transition: background-color 0.3s ease;
+    color: #fff; /* Asegura que el texto siga siendo blanco al pasar el cursor */
+    text-decoration: none; /* Elimina el subrayado al pasar el cursor */
+    font-size: 1.1rem; /* Aumenta ligeramente el tamaño del texto al pasar el cursor */
+    padding: 10px 20px; /* Mantiene el padding al pasar el cursor */
+    border-radius: 5px; /* Mantiene los bordes redondeados al pasar el cursor */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Añade una sombra al botón al pasar el cursor */
+    text-decoration: none; /* Elimina el subrayado al pasar el cursor */
+    font-weight: bold; /* Mantiene el texto en negrita al pasar el cursor */
+}
+
+.btn-agregar-carrito:hover {
+    background-color: #1e7e34; /* Cambia el color de fondo al pasar el cursor */
+    transform: translateY(-3px); /* Efecto de "levantar" al pasar el cursor */
+    text-decoration: none; /* Elimina el subrayado al pasar el cursor */
+    font-size: 1.1rem; /* Aumenta ligeramente el tamaño del texto al pasar el cursor */
+    padding: 10px 20px; /* Mantiene el padding al pasar el cursor */
+    border-radius: 5px; /* Mantiene los bordes redondeados al pasar el cursor */
+}
+
+
+/* --- Sección de Productos Destacados/Relacionados --- */
+.productos-destacados {
+    margin-bottom: 80px;
+    background-color: #eaf7ff; /* Un fondo ligeramente diferente para esta sección */
+    padding: 40px 0;
+    border-radius: 10px;
+}
+
+.productos-destacados h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 40px;
+    font-size: 2em;
+}
+
+.cuadricula-destacados {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    justify-content: center;
+}
+
+.item-destacado {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item-destacado:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.item-destacado img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.item-destacado h3 {
+    font-size: 1.2em;
+    color: #2c3e50;
+    margin-bottom: 5px;
+    padding: 0 15px;
+}
+
+.item-destacado p {
+    font-size: 0.95em;
+    color: #666;
+    margin-bottom: 15px;
+    padding: 0 15px;
+}
+
+.btn-ver-producto {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.95em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block; /* Para que el padding y el tamaño funcionen bien */
+}
+
+.btn-ver-producto:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+/*Sección de Contacto */
+.seccion-formulario-contacto,
+.seccion-mapa,
+.seccion-redes-sociales {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    margin-bottom: 40px;
+    text-align: center;
+    animation: slideInUp 0.8s ease-out forwards;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+@keyframes slideInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.seccion-formulario-contacto { animation-delay: 0.1s; }
+.seccion-mapa { animation-delay: 0.3s; }
+.seccion-redes-sociales { animation-delay: 0.5s; }
+
+
+.seccion-formulario-contacto h2,
+.seccion-mapa h2,
+.seccion-redes-sociales h2 {
+    color: #007bff;
+    font-size: 2.2em;
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.seccion-formulario-contacto h2::after,
+.seccion-mapa h2::after,
+.seccion-redes-sociales h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 3px;
+    background-color: #28a745;
+    border-radius: 2px;
+}
+
+/* --- Formulario de Contacto --- */
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.grupo-formulario label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+    font-size: 1.05em;
+}
+
+.grupo-formulario input[type="text"],
+.grupo-formulario input[type="email"],
+.grupo-formulario textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    font-size: 1em;
+    font-family: 'Lato', sans-serif;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grupo-formulario input[type="text"]:focus,
+.grupo-formulario input[type="email"]:focus,
+.grupo-formulario textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    outline: none;
+}
+
+.grupo-formulario textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.boton-enviar {
+    background-color: #28a745;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    align-self: center;
+    margin-top: 15px;
+    min-width: 200px;
+}
+
+.boton-enviar:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+/* --- Sección del Mapa --- */
+.contenedor-mapa {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor-mapa iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+    border: 0;
+}
+
+/* --- Sección Redes Sociales --- */
+.iconos-redes {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.iconos-redes a {
+    color: #34495e;
+    font-size: 2.5em;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.iconos-redes a:hover {
+    transform: translateY(-5px);
+}
+
+.icono-red-social {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.iconos-redes a:hover .icono-red-social {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+.iconos-redes a .fa-facebook-f:hover { color: #3b5998; }
+.iconos-redes a .fa-twitter:hover { color: #00acee; }
+.iconos-redes a .fa-instagram:hover { color: #E1306C; }
+.iconos-redes a .fa-linkedin-in:hover { color: #0077B5; }
+
+
+/* Pie de página (footer) */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer nav li {
+    margin: 0 15px;
+}
+
+footer nav a {
+    color: #eee;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer nav a:hover {
+    color: #fff;
+}
+
+/*Estilos para el boton de whatsapp*/
+.whatsapp-link {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    /* Color de WhatsApp */
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    font-size: 24px;
+    z-index: 1000;
+    /* Asegura que esté por encima de otros elementos */
+}
+
+/*Estilos para la imagen del icono de whatsapp*/
+.whatsapp-img {
+    width: 35px;
+    height: 35px;
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s ease;
+}
+
+/* Efecto hover para el icono de WhatsApp */
+.whatsapp-link:hover .whatsapp-img {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el cursor */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/*Responsividad */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    header {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .logo img {
+        height: 150px;
+        /* Reducir tamaño del logo */
+        width: auto;
+        /* Mantener proporción */
+        margin-bottom: 10px;
+    }
+
+    .navbar-toggler {
+        display: block;
+    }
+
+    .collapse {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .collapse.show {
+        display: flex;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+    }
+
+    .nav-item {
+        width: 100%;
+    }
+
+    form.d-flex {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    form.d-flex input,
+    form.d-flex button {
+        width: 100%;
+    }
+
+    .info-contacto {
+        text-align: center; /* Centrar en móviles si se prefiere */
+    }
+
+    #hero {
+        min-height: 500px;
+        /* Reducir altura del hero */
+    }
+
+    .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .lista-productos,
+    .lista-ofertas {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        /* Mantiene la grilla adaptable, ajusta minmax según necesites */
+        gap: 20px;
+    }
+}

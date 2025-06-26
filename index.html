@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Tienda de Suplementos Deportivos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <linkhref="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="/">
+                <img src="img/logo-apex.png" alt="Logo de Tu Tienda">
+            </a>
+        </div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#productos">Productos</a>
+                        <li>
+                            <a class="nav-link" href="/pages/ofertas.html">Ofertas</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="/pages/runners.html">Runners</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="/pages/indumentaria.html">Indumentaria</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Info
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="pages/nosotros.html">Sobre Nosotros</a></li>
+                                <li><a class="dropdown-item" href="pages/contactos.html">Contactanos</a></li>
+                                <li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true"></a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="carrito">
+            <a href="/carrito">
+                <img src="/img/icono-carrito.jpeg" alt="Carrito de Compras">
+                <span id="cantidad-carrito">0</span>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Encuentra los Suplementos Perfectos para tus Metas</h1>
+                <p>Creatina, proteínas, pre-entrenos y mucho más para potenciar tu rendimiento.</p>
+                <a href="#productos" class="boton-principal">Ver Productos</a>
+            </div>
+            <div class="hero-image">
+                <img src="img/seccion-hero2.png" alt="Imagen de Suplementos">
+            </div>
+        </section>
+
+        <section id="productos" class="seccion-productos">
+            <h2>Nuestros Productos Destacados</h2>
+            <div class="lista-productos">
+                <div class="producto">
+                    <img src="img/creatina-apex.jpeg" alt="Creatina">
+                    <h3>Creatina Monohidratada</h3>
+                    <p class="descripcion">Aumenta la fuerza y la potencia muscular.</p>
+                    <p class="precio">$XX.XX</p>
+                    <button class="boton-comprar">Añadir al Carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="img/caja-barra-proteica-apex.jpeg" alt="Proteína Whey">
+                    <h3>Barras Proteicas sabor chocolate y vainilla apex nutrition</h3>
+                    <p class="descripcion">Ideal para la recuperación y crecimiento muscular.</p>
+                    <p class="precio">$YY.YY</p>
+                    <button class="boton-comprar">Añadir al Carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="img/pre-entreno-apex.jpeg" alt="Pre-Entreno">
+                    <h3>Pre-Entreno Explosivo</h3>
+                    <p class="descripcion">Máxima energía y enfoque para tus entrenamientos.</p>
+                    <p class="precio">$ZZ.ZZ</p>
+                    <button class="boton-comprar">Añadir al Carrito</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="otros-productos" class="seccion-productos">
+            <h2>Otros Productos</h2>
+            <div class="lista-productos">
+                <div class="producto">
+                    <img src="img/shaker-apex-nutrition.jpeg" alt="Shaker">
+                    <h3>Shaker Pro 500ml</h3>
+                    <p class="descripcion">Perfecto para mezclar tus batidos sin grumos.</p>
+                    <p class="precio">$AA.AA</p>
+                    <button class="boton-comprar">Añadir al Carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="img/straps-apex-nutrition.jpeg" alt="Agarres de gimnasio">
+                    <h3>Agarres Straps de Gimnasio</h3>
+                    <p class="descripcion">Mejora tu agarre y protege tus manos.</p>
+                    <p class="precio">$BB.BB</p>
+                    <button class="boton-comprar">Añadir al Carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="img/muñequeras-apex-nutrition.jpeg" alt="Muñequeras deportivas">
+                    <h3>Muñequeras Deportivas</h3>
+                    <p class="descripcion">Soporte y estabilidad para tus muñecas.</p>
+                    <p class="precio">$CC.CC</p>
+                    <button class="boton-comprar">Añadir al Carrito</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="ofertas" class="seccion-ofertas">
+            <h2>¡Ofertas Imperdibles!</h2>
+            <div class="lista-ofertas">
+                <div class="oferta">
+                    <img src="img/whey-protein-apex.jpeg" alt="Proteína en Oferta">
+                    <h3>Proteína Whey 2KG - ¡Descuento Especial!</h3>
+                    <p class="precio-antes">$XX.XX</p>
+                    <p class="precio-ahora">$YY.YY</p>
+                    <button class="boton-comprar">Aprovechar Oferta</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Apex Nutrition. Todos los derechos reservados.</p>
+        <nav>
+            <ul>
+                <li><a href="/terminos">Términos y Condiciones</a></li>
+                <li><a href="/privacidad">Política de Privacidad</a></li>
+            </ul>
+        </nav>
+        <a href="https://wa.me/1234567890" class="whatsapp-link" target="_blank">
+            <img src="img/whatsapp.png" alt="WhatsApp" class="whatsapp-img">
+        </a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indumentaria Deportiva - [Nombre de tu Marca]</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="/">
+                <img src="/img/logo-apex.png" alt="Logo de Tu Tienda">
+            </a>
+        </div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html">Productos</a>
+                        <li>
+                            <a class="nav-link" href="ofertas.html">Ofertas</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="runners.html">Runners</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="indumentaria.html">Indumentaria</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Info
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="nosotros.html">Sobre Nosotros</a></li>
+                                <li><a class="dropdown-item" href="contactos.html">Contactanos</a></li>
+                                <li>
+                            </ul>
+                        </li>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="carrito">
+            <a href="/carrito">
+                <img src="/img/icono-carrito.jpeg" alt="Carrito de Compras">
+                <span id="cantidad-carrito">0</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="pagina-indumentaria">
+        <div class="contenedor">
+            <h1>Explora Nuestra Indumentaria Deportiva</h1>
+            <p class="texto-introductorio">Equípate para superar tus límites. Descubre nuestra colección de ropa y
+                accesorios diseñados para tu máximo rendimiento y comodidad.</p>
+
+            <section class="categorias-indumentaria">
+                <h2>Categorías Destacadas</h2>
+                <div class="cuadricula-categorias">
+                    <a href="#remeras" class="item-categoria">
+                        <img src="/img/remera-apex-nutrition.png" alt="Remeras Deportivas">
+                        <h3>Remeras & Musculosas</h3>
+                    </a>
+                    <a href="#calzas" class="item-categoria">
+                        <img src="/img/calza-compresion-apex.png" alt="Calzas y Shorts">
+                        <h3>Calzas & Shorts</h3>
+                    </a>
+                    <a href="#buzos" class="item-categoria">
+                        <img src="/img/buzo-entrenamiento-apex.png" alt="Buzos y Camperas">
+                        <h3>Buzos & Camperas</h3>
+                    </a>
+                </div>
+            </section>
+
+            <hr>
+            <section class="filtros-indumentaria">
+                <h3>Filtrar Productos</h3>
+                <div class="opciones-filtro">
+                    <select name="filtro-categoria" id="filtro-categoria">
+                        <option value="">Todas las Categorías</option>
+                        <option value="remeras">Remeras</option>
+                        <option value="calzas">Calzas</option>
+                        <option value="buzos">Buzos</option>
+                        <option value="accesorios">Accesorios</option>
+                    </select>
+                    <select name="filtro-talla" id="filtro-talla">
+                        <option value="">Talla</option>
+                        <option value="xs">XS</option>
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                        <option value="xl">XL</option>
+                    </select>
+                    <select name="filtro-color" id="filtro-color">
+                        <option value="">Color</option>
+                        <option value="negro">Negro</option>
+                        <option value="blanco">Blanco</option>
+                        <option value="azul">Azul</option>
+                        <option value="gris">Gris</option>
+                    </select>
+                    <button class="btn-aplicar-filtros">Aplicar Filtros</button>
+                </div>
+            </section>
+
+            <hr>
+            <section class="listado-productos">
+                <h2>Nuestros Productos</h2>
+                <div class="cuadricula-productos">
+
+                    <div class="tarjeta-producto">
+                        <a href="producto-remera-dryfit.html">
+                            <img src="/img/remera-apex-nutrition.png" alt="Remera Dry-Fit Hombre">
+                            <h3>Remera Deportiva Dry-Fit Hombre</h3>
+                        </a>
+                        <p class="marca-producto">Apex Nutrition</p>
+                        <p class="precio-producto">$19.999</p>
+                        <button class="btn-agregar-carrito">Agregar al Carrito</button>
+                    </div>
+
+                    <div class="tarjeta-producto">
+                        <a href="producto-calza-compresion.html">
+                            <img src="/img/calza-compresion-apex.png" alt="Calza de Compresión Mujer">
+                            <h3>Calza de Compresión Mujer</h3>
+                        </a>
+                        <p class="marca-producto">Apex Nutrition</p>
+                        <p class="precio-producto">$24.999</p>
+                        <button class="btn-agregar-carrito">Agregar al Carrito</button>
+                    </div>
+
+                    <div class="tarjeta-producto">
+                        <a href="producto-buzo-entrenamiento.html">
+                            <img src="/img/buzo-entrenamiento-apex.png" alt="Buzo de Entrenamiento Unisex">
+                            <h3>Buzo con Capucha Entrenamiento</h3>
+                        </a>
+                        <p class="marca-producto">Apex Nutrition</p>
+                        <p class="precio-producto">$29.999</p>
+                        <button class="btn-agregar-carrito">Agregar al Carrito</button>
+                    </div>
+
+                    <div class="tarjeta-producto">
+                        <a href="producto-guantes-gym.html">
+                            <img src="/img/guantes-apex.png" alt="Guantes de Gimnasio">
+                            <h3>Guantes de Entrenamiento Pro</h3>
+                        </a>
+                        <p class="marca-producto">Apex Nutrition</p>
+                        <p class="precio-producto">$9.999</p>
+                        <button class="btn-agregar-carrito">Agregar al Carrito</button>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="productos-destacados">
+                <h2>Completa tu Rendimiento</h2>
+                <div class="cuadricula-destacados">
+                </div>
+                <div class="item-destacado">
+                    <img src="/img/medias-apex-nutrition.png" alt="Medias Deportivas">
+                    <h3>Medias Deportivas Pro</h3>
+                    <p>Máximo confort para tus pies.</p>
+                    <button class="btn-agregar-carrito">Agregar al Carrito</button>
+                </div>
+        </div>
+        </section>
+
+        </div>
+    </main>
+
+    <footer class="pie-pagina-principal">
+        <div class="contenedor contenido-pie-pagina">
+            <div class="seccion-pie-pagina sobre-nosotros">
+                <h4>Sobre Nosotros</h4>
+                <p>Apex Nutrition es tu aliado en nutrición y equipamiento deportivo. Nos dedicamos a potenciar tu
+                    rendimiento.</p>
+            </div>
+            <div class="seccion-pie-pagina contacto-info">
+                <h4>Contacto</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Dirección: [Tu Dirección], González Catán, Buenos Aires.</p>
+                <p><i class="fas fa-phone"></i> Teléfono: [Tu Teléfono]</p>
+                <p><i class="fas fa-envelope"></i> Email: [Tu Email]</p>
+            </div>
+            <div class="seccion-pie-pagina redes-sociales">
+                <h4>Síguenos</h4>
+                <a href="https://facebook.com/tumarca" target="_blank" aria-label="Facebook"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com/tumarca" target="_blank" aria-label="Instagram"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/tumarca" target="_blank" aria-label="Twitter"><i
+                        class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="derechos-reservados">
+            <p>&copy; 2025 [Nombre de tu Marca]. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

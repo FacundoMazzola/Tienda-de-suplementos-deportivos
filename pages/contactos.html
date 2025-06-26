@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctanos</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="/">
+                <img src="/img/logo-apex.png" alt="Logo de Tu Tienda">
+            </a>
+        </div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html">Productos</a>
+                        <li>
+                            <a class="nav-link" href="ofertas.html">Ofertas</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="runners.html">Runners</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="indumentaria.html">Indumentaria</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Info
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="nosotros.html">Sobre Nosotros</a></li>
+                                <li><a class="dropdown-item" href="contactos.html">Contactanos</a></li>
+                                <li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true"></a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="carrito">
+            <a href="/carrito">
+                <img src="/img/icono-carrito.jpeg" alt="Carrito de Compras">
+                <span id="cantidad-carrito">0</span>
+            </a>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="seccion-formulario-contacto">
+            <h2>Envíanos un Mensaje</h2>
+            <form action="#" method="POST" class="formulario-contacto">
+                <div class="grupo-formulario">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="grupo-formulario">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="grupo-formulario">
+                    <label for="asunto">Asunto:</label>
+                    <input type="text" id="asunto" name="asunto">
+                </div>
+                <div class="grupo-formulario">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+                </div>
+                <button type="submit" class="boton-enviar">Enviar Mensaje</button>
+            </form>
+        </section>
+
+        ---
+
+        <section class="seccion-mapa">
+            <h2>Nuestra Ubicación</h2>
+            <div class="contenedor-mapa">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3276.7869634994266!2d-58.59972302359483!3d-34.78912387284752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95acd1c13d967b2d%3A0x2a3e8e19c36e4f16!2sGonz%C3%A1lez%20Cat%C3%A1n%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4f13.1"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        ---
+
+        <section class="seccion-redes-sociales">
+            <h2>Síguenos en Redes Sociales</h2>
+            <div class="iconos-redes">
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                    <img src="/img/facebook.png" alt="Facebook" class="icono-red-social">
+                </a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                    <img src="/img/X-img.png" alt="Twitter" class="icono-red-social">
+                </a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                    <img src="/img/instagram.png" alt="Instagram" class="icono-red-social">
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Tu Empresa. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
