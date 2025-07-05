@@ -6,27 +6,19 @@ body {
   font-family: poppins, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f0f2f5;
-  /* Un color de fondo suave */
-  color: #333;
-  /* Color de texto por defecto */
-  font-size: 16px;
-  /* Tamaño de fuente estándar */
-  line-height: 1.5;
-  /* Altura de línea estándar */
-  -webkit-font-smoothing: antialiased;
-  /* Mejora la suavidad de las fuentes en WebKit */
-  -moz-osx-font-smoothing: grayscale;
-  /* Mejora la suavidad de las fuentes en Firefox */
-  box-sizing: border-box;
-  /* Incluye padding y border en el ancho y alto de los elementos */
+  background-color: #f0f2f5; /* Un color de fondo suave */
+  color: #333; /* Color de texto por defecto */
+  font-size: 16px; /* Tamaño de fuente estándar */
+  line-height: 1.5; /* Altura de línea estándar */
+  -webkit-font-smoothing: antialiased; /* Mejora la suavidad de las fuentes en WebKit */
+  -moz-osx-font-smoothing: grayscale; /* Mejora la suavidad de las fuentes en Firefox */
+  box-sizing: border-box; /* Incluye padding y border en el ancho y alto de los elementos */
 }
 
 /* Reset de estilos para todos los enlaces */
 a {
   text-decoration: none;
-  color: inherit;
-  /* Hereda el color del texto del padre */
+  color: inherit; /* Hereda el color del texto del padre */
 }
 
 .container {
@@ -44,37 +36,25 @@ header {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: relative;
   padding: 10px 20px;
-  z-index: 1000;
-  /* Asegura que el header esté por encima de otros elementos */
-  margin-bottom: 20px;
-  /* Espacio debajo del header */
-  border-bottom: 1px solid #e0e0e0;
-  /* Línea sutil debajo del header */
-  font-family: poppins, sans-serif;
-  /* Fuente para el header */
-  flex-wrap: wrap;
-  /* Permite que los elementos se ajusten en pantallas pequeñas */
-  align-items: center;
-  /* Alinea los elementos verticalmente */
-  gap: 20px;
-  /* Espacio entre los elementos del header */
-  background-color: #ffffff;
-  /* Fondo blanco para el header */
-  border-radius: 8px;
-  /* Bordes redondeados para un toque moderno */
+  z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
+  margin-bottom: 20px; /* Espacio debajo del header */
+  border-bottom: 1px solid #e0e0e0; /* Línea sutil debajo del header */
+  font-family: poppins, sans-serif; /* Fuente para el header */
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+  align-items: center; /* Alinea los elementos verticalmente */
+  gap: 20px; /* Espacio entre los elementos del header */
+  background-color: #ffffff; /* Fondo blanco para el header */
+  border-radius: 8px; /* Bordes redondeados para un toque moderno */
 }
 
 /* Estilos para el logo */
 .logo {
-  flex-shrink: 0;
-  /* Evita que el logo se achique */
+  flex-shrink: 0; /* Evita que el logo se achique */
 }
 
 .logo img {
-  max-height: 100px;
-  /* Ajusta la altura máxima del logo */
-  width: auto;
-  /* Mantiene la proporción del logo */
+  max-height: 100px; /* Ajusta la altura máxima del logo */
+  width: auto; /* Mantiene la proporción del logo */
 }
 
 /* Nav */
@@ -111,8 +91,7 @@ header {
   -webkit-mask-size: contain;
           mask-size: contain;
   -webkit-mask-image: url("../img/menu-de-hamburguesas.png");
-          mask-image: url("../img/menu-de-hamburguesas.png");
-  /* Ruta al icono de hamburguesa */
+          mask-image: url("../img/menu-de-hamburguesas.png"); /* Ruta al icono de hamburguesa */
   -webkit-mask-repeat: no-repeat;
           mask-repeat: no-repeat;
   -webkit-mask-position: center;
@@ -143,8 +122,7 @@ header {
   margin-right: 1rem;
   font-size: 1rem;
   font-weight: 500;
-  color: #000;
-  /* Color del texto de los enlaces */
+  color: #000; /* Color del texto de los enlaces */
   transition: color 0.3s ease;
 }
 
@@ -160,11 +138,9 @@ header {
 }
 
 .nav-link:hover {
-  color: #007bff;
-  /* Usa la variable de color */
+  color: #007bff; /* Usa la variable de color */
   transition: color 0.3s ease;
-  border-bottom: 1px solid #007bff;
-  /* Usa la variable de color */
+  border-bottom: 1px solid #007bff; /* Usa la variable de color */
   padding-bottom: 2px;
   font-weight: bold;
   font-size: 1.1rem;
@@ -218,12 +194,10 @@ header {
 
 .dropdown-item:hover {
   background-color: #f8f9fa;
-  color: #007bff;
-  /* Usa la variable de color */
+  color: #007bff; /* Usa la variable de color */
   transition: background-color 0.3s ease;
   border-radius: 0.25rem;
-  border: 1px solid #007bff;
-  /* Usa la variable de color */
+  border: 1px solid #007bff; /* Usa la variable de color */
   font-weight: bold;
   text-align: center;
   font-size: 0.9rem;
@@ -262,13 +236,11 @@ form.d-flex button {
 }
 
 form.d-flex button:hover {
-  background-color: #0056b3;
-  /* Usa la variable de color */
+  background-color: #0056b3; /* Usa la variable de color */
   color: #fff;
   transition: background-color 0.4s ease;
   border-radius: 0.25rem;
-  border: 1px solid #0056b3;
-  /* Usa la variable de color */
+  border: 1px solid #0056b3; /* Usa la variable de color */
   font-weight: bold;
   font-size: 1.1rem;
   padding: 0.375rem 0.75rem;
@@ -283,18 +255,15 @@ form.d-flex button:hover {
 }
 
 .carrito img {
-  height: 50px;
-  /* Ajusta el tamaño del icono del carrito */
-  width: auto;
-  /* Mantiene la proporción de la imagen */
+  height: 50px; /* Ajusta el tamaño del icono del carrito */
+  width: auto; /* Mantiene la proporción de la imagen */
 }
 
 .carrito span#cantidad-carrito {
   position: absolute;
   top: -8px;
   right: -8px;
-  background-color: #dc3545;
-  /* Un color de alerta */
+  background-color: #dc3545; /* Un color de alerta */
   color: #fff;
   border-radius: 50%;
   padding: 5px 8px;
@@ -304,27 +273,23 @@ form.d-flex button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 20px;
-  /* Ancho mínimo para el badge */
+  min-width: 20px; /* Ancho mínimo para el badge */
 }
 
 /* Estilos para el contenido principal */
 main {
   display: block;
-  margin-top: 0;
-  /* para eliminar el margen superior por defecto */
+  margin-top: 0; /* para eliminar el margen superior por defecto */
 }
 
 /* Sección Hero */
 #hero {
   background-color: #e9ecef;
-  padding: 0;
-  /* Quite el padding para que la imagen ocupe todo */
+  padding: 0; /* Quite el padding para que la imagen ocupe todo */
   text-align: center;
   position: relative;
   min-height: 75vh;
-  overflow: hidden;
-  /* Para contener la imagen */
+  overflow: hidden; /* Para contener la imagen */
 }
 
 .hero-content {
@@ -334,10 +299,8 @@ main {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  background-color: rgba(0, 0, 0, 0.432);
-  /* Fondo semitransparente */
-  color: #fff;
-  /* Cambiado a blanco para contraste */
+  background-color: rgba(0, 0, 0, 0.432); /* Fondo semitransparente */
+  color: #fff; /* Cambiado a blanco para contraste */
   text-align: center;
   padding: 30px;
   border-radius: 8px;
@@ -346,21 +309,18 @@ main {
 .hero-content h1 {
   font-size: 2.5em;
   margin-bottom: 15px;
-  color: #fff;
-  /* Cambiado a blanco para contraste */
+  color: #fff; /* Cambiado a blanco para contraste */
 }
 
 .hero-content p {
   font-size: 1.1em;
-  color: #eee;
-  /* Cambiado a gris claro para contraste */
+  color: #eee; /* Cambiado a gris claro para contraste */
   margin-bottom: 25px;
 }
 
 .boton-principal {
   display: inline-block;
-  background-color: #007bff;
-  /* Usa la variable de color */
+  background-color: #007bff; /* Usa la variable de color */
   color: #fff;
   padding: 12px 25px;
   border-radius: 5px;
@@ -369,19 +329,13 @@ main {
 }
 
 .boton-principal:hover {
-  background-color: #0056b3;
-  /* Usa la variable de color */
+  background-color: #0056b3; /* Usa la variable de color */
   transition: background-color 0.3s ease;
-  color: #fff;
-  /* Asegura que el texto siga siendo blanco al pasar el cursor */
-  font-size: 1.1rem;
-  /* Aumenta ligeramente el tamaño del texto al pasar el cursor */
-  padding: 12px 25px;
-  /* Mantiene el padding al pasar el cursor */
-  border-radius: 5px;
-  /* Mantiene los bordes redondeados al pasar el cursor */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  /* Añade una sombra al botón al pasar el cursor */
+  color: #fff; /* Asegura que el texto siga siendo blanco al pasar el cursor */
+  font-size: 1.1rem; /* Aumenta ligeramente el tamaño del texto al pasar el cursor */
+  padding: 12px 25px; /* Mantiene el padding al pasar el cursor */
+  border-radius: 5px; /* Mantiene los bordes redondeados al pasar el cursor */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Añade una sombra al botón al pasar el cursor */
 }
 
 .hero-image {
@@ -427,34 +381,24 @@ main {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
   padding: 20px;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
-  /* para que haya una transición suave */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease; /* para que haya una transición suave */
 }
 
 .producto:hover {
-  transform: scale(1.05);
-  /* Escala la tarjeta al pasar el cursor */
+  transform: scale(1.05); /* Escala la tarjeta al pasar el cursor */
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
   /* Sombra más pronunciada al pasar el cursor */
-  cursor: pointer;
-  /* Cambia el cursor al pasar por encima */
-  font-size: 1.1rem;
-  /* Aumenta ligeramente el tamaño del texto al pasar el cursor */
-  padding: 20px;
-  /* Mantiene el padding al pasar el cursor */
-  border-radius: 8px;
-  /* Mantiene los bordes redondeados al pasar el cursor */
-  background-color: #f8f9fa;
-  /* Cambia el color de fondo al pasar el cursor */
-  color: #333;
-  /* Cambia el color del texto al pasar el cursor */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+  font-size: 1.1rem; /* Aumenta ligeramente el tamaño del texto al pasar el cursor */
+  padding: 20px; /* Mantiene el padding al pasar el cursor */
+  border-radius: 8px; /* Mantiene los bordes redondeados al pasar el cursor */
+  background-color: #f8f9fa; /* Cambia el color de fondo al pasar el cursor */
+  color: #333; /* Cambia el color del texto al pasar el cursor */
 }
 
 .producto img {
-  max-width: 100%;
-  /* Ajusta la imagen al ancho de la tarjeta */
-  height: auto;
-  /* Mantiene la proporción de la imagen */
+  max-width: 100%; /* Ajusta la imagen al ancho de la tarjeta */
+  height: auto; /* Mantiene la proporción de la imagen */
   margin-bottom: 15px;
   border-radius: 5px;
 }
@@ -473,43 +417,29 @@ main {
 .producto .precio {
   font-size: 1.1em;
   font-weight: bold;
-  color: #28a745;
-  /* Un color para el precio */
+  color: #28a745; /* Un color para el precio */
   margin-bottom: 15px;
 }
 
 .boton-comprar {
-  background-color: #007bff;
-  /* Usa la variable de color */
+  background-color: #007bff; /* Usa la variable de color */
   transition: background-color 0.3s ease;
-  color: #fff;
-  /* Asegura que el texto siga siendo blanco al pasar el cursor */
-  padding: 10px 20px;
-  /* Mantiene el padding al pasar el cursor */
-  border-radius: 5px;
-  /* Mantiene los bordes redondeados al pasar el cursor */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  /* Añade una sombra al botón al pasar el cursor */
-  font-weight: bold;
-  /* Mantiene el texto en negrita al pasar el cursor */
+  color: #fff; /* Asegura que el texto siga siendo blanco al pasar el cursor */
+  padding: 10px 20px; /* Mantiene el padding al pasar el cursor */
+  border-radius: 5px; /* Mantiene los bordes redondeados al pasar el cursor */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Añade una sombra al botón al pasar el cursor */
+  font-weight: bold; /* Mantiene el texto en negrita al pasar el cursor */
 }
 
 .boton-comprar:hover {
-  background-color: #0056b3;
-  /* Usa la variable de color */
+  background-color: #0056b3; /* Usa la variable de color */
   transition: background-color 0.3s ease;
-  color: #fff;
-  /* Asegura que el texto siga siendo blanco al pasar el cursor */
-  font-size: 1.1rem;
-  /* Aumenta ligeramente el tamaño del texto al pasar el cursor */
-  padding: 10px 20px;
-  /* Mantiene el padding al pasar el cursor */
-  border-radius: 5px;
-  /* Mantiene los bordes redondeados al pasar el cursor */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  /* Añade una sombra al botón al pasar el cursor */
-  font-weight: bold;
-  /* Mantiene el texto en negrita al pasar el cursor */
+  color: #fff; /* Asegura que el texto siga siendo blanco al pasar el cursor */
+  font-size: 1.1rem; /* Aumenta ligeramente el tamaño del texto al pasar el cursor */
+  padding: 10px 20px; /* Mantiene el padding al pasar el cursor */
+  border-radius: 5px; /* Mantiene los bordes redondeados al pasar el cursor */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Añade una sombra al botón al pasar el cursor */
+  font-weight: bold; /* Mantiene el texto en negrita al pasar el cursor */
 }
 
 /* Sección de Oferta imperdible */
@@ -540,10 +470,8 @@ main {
 }
 
 .oferta img {
-  max-width: 100%;
-  /* Ajusta la imagen al ancho de la tarjeta */
-  height: auto;
-  /* Mantiene la proporción de la imagen */
+  max-width: 100%; /* Ajusta la imagen al ancho de la tarjeta */
+  height: auto; /* Mantiene la proporción de la imagen */
   margin-bottom: 15px;
   border-radius: 5px;
 }
@@ -577,44 +505,27 @@ main {
   }
 }
 .oferta:hover {
-  transform: scale(1.05);
-  /* Escala la tarjeta al pasar el cursor */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  /* Sombra más pronunciada al pasar el cursor */
-  cursor: pointer;
-  /* Cambia el cursor al pasar por encima */
-  font-size: 1.1rem;
-  /* Aumenta ligeramente el tamaño del texto al pasar el cursor */
-  padding: 20px;
-  /* Mantiene el padding al pasar el cursor */
-  border-radius: 8px;
-  /* Mantiene los bordes redondeados al pasar el cursor */
-  background-color: #f8f9fa;
-  /* Cambia el color de fondo al pasar el cursor */
-  color: #333;
-  /* Cambia el color del texto al pasar el cursor */
-  animation: fadeIn 0.5s ease-in-out;
-  /* Añade una animación de aparición suave */
-  font-weight: bold;
-  /* Mantiene el texto en negrita al pasar el cursor */
+  transform: scale(1.05); /* Escala la tarjeta al pasar el cursor */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada al pasar el cursor */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+  font-size: 1.1rem; /* Aumenta ligeramente el tamaño del texto al pasar el cursor */
+  padding: 20px; /* Mantiene el padding al pasar el cursor */
+  border-radius: 8px; /* Mantiene los bordes redondeados al pasar el cursor */
+  background-color: #f8f9fa; /* Cambia el color de fondo al pasar el cursor */
+  color: #333; /* Cambia el color del texto al pasar el cursor */
+  animation: fadeIn 0.5s ease-in-out; /* Añade una animación de aparición suave */
+  font-weight: bold; /* Mantiene el texto en negrita al pasar el cursor */
 }
 
 /* Sección Sobre Nosotros */
 .seccion-nosotros {
-  background-color: #ffffff;
-  /* Fondo blanco para la sección */
-  padding: 60px 40px;
-  /* Mucho padding para que el contenido respire */
-  border-radius: 15px;
-  /* Bordes ligeramente redondeados para un toque moderno */
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  /* Sombra suave para un efecto de elevación */
-  text-align: center;
-  /* Centra el texto dentro de la sección */
-  margin-bottom: 40px;
-  /* Espacio debajo de la sección */
-  animation: fadeIn 1s ease-out;
-  /* Animación de aparición suave */
+  background-color: #ffffff; /* Fondo blanco para la sección */
+  padding: 60px 40px; /* Mucho padding para que el contenido respire */
+  border-radius: 15px; /* Bordes ligeramente redondeados para un toque moderno */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* Sombra suave para un efecto de elevación */
+  text-align: center; /* Centra el texto dentro de la sección */
+  margin-bottom: 40px; /* Espacio debajo de la sección */
+  animation: fadeIn 1s ease-out; /* Animación de aparición suave */
 }
 
 @keyframes fadeIn {
@@ -628,106 +539,73 @@ main {
   }
 }
 .seccion-nosotros h2 {
-  font-size: 3.2em;
-  /* Tamaño de fuente grande para el título */
-  color: #007bff;
-  /* Usa la variable de color */
-  margin-bottom: 30px;
-  /* Espacio debajo del título */
-  position: relative;
-  /* Para el pseudo-elemento */
-  padding-bottom: 15px;
-  /* Espacio para la línea decorativa */
-  letter-spacing: 1px;
-  /* Pequeño espaciado entre letras */
+  font-size: 3.2em; /* Tamaño de fuente grande para el título */
+  color: #007bff; /* Usa la variable de color */
+  margin-bottom: 30px; /* Espacio debajo del título */
+  position: relative; /* Para el pseudo-elemento */
+  padding-bottom: 15px; /* Espacio para la línea decorativa */
+  letter-spacing: 1px; /* Pequeño espaciado entre letras */
 }
 
 .seccion-nosotros h2::after {
-  content: "";
-  /* Contenido para el pseudo-elemento */
+  content: ""; /* Contenido para el pseudo-elemento */
   position: absolute;
   bottom: 0;
-  left: 50%;
-  /* Centra la línea */
-  transform: translateX(-50%);
-  /* Ajusta el centrado */
-  width: 80px;
-  /* Ancho de la línea */
-  height: 4px;
-  /* Grosor de la línea */
-  background-color: #28a745;
-  /* Color de la línea */
-  border-radius: 2px;
-  /* Bordes redondeados para la línea */
+  left: 50%; /* Centra la línea */
+  transform: translateX(-50%); /* Ajusta el centrado */
+  width: 80px; /* Ancho de la línea */
+  height: 4px; /* Grosor de la línea */
+  background-color: #28a745; /* Color de la línea */
+  border-radius: 2px; /* Bordes redondeados para la línea */
 }
 
 .seccion-nosotros p {
   font-size: 1.1em;
   line-height: 1.8;
   color: #555;
-  max-width: 800px;
-  /* Ancho máximo para el párrafo */
-  margin: 0 auto 30px auto;
-  /* Centra el párrafo y añade espacio debajo */
+  max-width: 800px; /* Ancho máximo para el párrafo */
+  margin: 0 auto 30px auto; /* Centra el párrafo y añade espacio debajo */
 }
 
 /* Sección de Contacto */
 .seccion-contacto {
-  background-color: #fff;
-  /* Fondo blanco para la sección de contacto */
-  padding: 50px 30px;
-  /* Relleno generoso */
-  border-radius: 10px;
-  /* Bordes ligeramente redondeados */
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-  /* Sombra suave para un efecto de elevación */
-  text-align: center;
-  /* Centra el contenido */
-  margin-bottom: 40px;
-  /* Espacio debajo de la sección */
+  background-color: #fff; /* Fondo blanco para la sección de contacto */
+  padding: 50px 30px; /* Relleno generoso */
+  border-radius: 10px; /* Bordes ligeramente redondeados */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08); /* Sombra suave para un efecto de elevación */
+  text-align: center; /* Centra el contenido */
+  margin-bottom: 40px; /* Espacio debajo de la sección */
 }
 
 .seccion-contacto h2 {
-  font-size: 2.5em;
-  /* Tamaño de fuente para el título */
-  color: #333;
-  /* Color oscuro para el texto */
-  margin-bottom: 25px;
-  /* Espacio debajo del título */
+  font-size: 2.5em; /* Tamaño de fuente para el título */
+  color: #333; /* Color oscuro para el texto */
+  margin-bottom: 25px; /* Espacio debajo del título */
 }
 
 .info-contacto {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  /* Permite que los elementos se ajusten */
-  gap: 30px;
-  /* Espacio entre los elementos de contacto */
-  margin-bottom: 30px;
-  /* Espacio debajo de la información de contacto */
+  flex-wrap: wrap; /* Permite que los elementos se ajusten */
+  gap: 30px; /* Espacio entre los elementos de contacto */
+  margin-bottom: 30px; /* Espacio debajo de la información de contacto */
 }
 
 .info-contacto div {
-  background-color: #f9f9f9;
-  /* Fondo claro para cada elemento de contacto */
+  background-color: #f9f9f9; /* Fondo claro para cada elemento de contacto */
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  /* Sombra suave */
-  flex: 1;
-  /* Permite que los elementos crezcan y se encojan */
-  min-width: 280px;
-  /* Ancho mínimo para cada tarjeta de contacto */
-  max-width: 350px;
-  /* Ancho máximo para cada tarjeta de contacto */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* Sombra suave */
+  flex: 1; /* Permite que los elementos crezcan y se encojan */
+  min-width: 280px; /* Ancho mínimo para cada tarjeta de contacto */
+  max-width: 350px; /* Ancho máximo para cada tarjeta de contacto */
   text-align: center;
 }
 
 .info-contacto h3 {
   font-size: 1.3em;
-  color: #007bff;
-  /* Color primario para los títulos de contacto */
+  color: #007bff; /* Color primario para los títulos de contacto */
   margin-bottom: 10px;
 }
 
@@ -738,85 +616,61 @@ main {
 }
 
 .info-contacto a {
-  color: #007bff;
-  /* Color de enlace para teléfonos y correos */
+  color: #007bff; /* Color de enlace para teléfonos y correos */
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .info-contacto a:hover {
-  color: #0056b3;
-  /* Color al pasar el cursor sobre los enlaces */
+  color: #0056b3; /* Color al pasar el cursor sobre los enlaces */
 }
 
 .mapa-ubicacion {
-  margin-top: 30px;
-  /* Espacio encima del mapa */
-  border-radius: 10px;
-  /* Bordes redondeados para el mapa */
-  overflow: hidden;
-  /* Asegura que el iframe se ajuste a los bordes */
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  /* Sombra para el mapa */
+  margin-top: 30px; /* Espacio encima del mapa */
+  border-radius: 10px; /* Bordes redondeados para el mapa */
+  overflow: hidden; /* Asegura que el iframe se ajuste a los bordes */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra para el mapa */
 }
 
 .mapa-ubicacion iframe {
-  width: 100%;
-  /* Ancho completo */
-  height: 400px;
-  /* Altura fija para el mapa */
-  border: 0;
-  /* Elimina el borde por defecto del iframe */
+  width: 100%; /* Ancho completo */
+  height: 400px; /* Altura fija para el mapa */
+  border: 0; /* Elimina el borde por defecto del iframe */
   border-radius: 10px;
 }
 
 /* Footer */
 footer {
-  background-color: #333;
-  /* Color de fondo oscuro para el footer */
-  color: #fff;
-  /* Color de texto claro */
-  padding: 30px 20px;
-  /* Relleno */
-  text-align: center;
-  /* Centra el texto */
-  font-size: 0.9em;
-  /* Tamaño de fuente ligeramente más pequeño */
-  border-top: 5px solid #007bff;
-  /* Línea superior con color primario */
+  background-color: #333; /* Color de fondo oscuro para el footer */
+  color: #fff; /* Color de texto claro */
+  padding: 30px 20px; /* Relleno */
+  text-align: center; /* Centra el texto */
+  font-size: 0.9em; /* Tamaño de fuente ligeramente más pequeño */
+  border-top: 5px solid #007bff; /* Línea superior con color primario */
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px;
-  /* Espacio entre elementos del footer */
+  gap: 15px; /* Espacio entre elementos del footer */
 }
 
 .redes-sociales {
-  margin-bottom: 15px;
-  /* Espacio debajo de los iconos de redes */
+  margin-bottom: 15px; /* Espacio debajo de los iconos de redes */
 }
 
 .redes-sociales a {
-  color: #fff;
-  /* Iconos blancos */
-  font-size: 1.5em;
-  /* Tamaño de los iconos */
-  margin: 0 10px;
-  /* Espacio entre iconos */
-  transition: color 0.3s ease;
-  /* Transición suave para el color */
+  color: #fff; /* Iconos blancos */
+  font-size: 1.5em; /* Tamaño de los iconos */
+  margin: 0 10px; /* Espacio entre iconos */
+  transition: color 0.3s ease; /* Transición suave para el color */
 }
 
 .redes-sociales a:hover {
-  color: #007bff;
-  /* Cambia a color primario al pasar el cursor */
+  color: #007bff; /* Cambia a color primario al pasar el cursor */
 }
 
 .whatsapp-link {
-  display: inline-block;
-  /* Para aplicar transformaciones y sombras */
-  line-height: 0;
-  /* Elimina espacio extra debajo del icono */
+  display: inline-block; /* Para aplicar transformaciones y sombras */
+  line-height: 0; /* Elimina espacio extra debajo del icono */
   position: fixed;
   right: 20px;
   bottom: 20px;
@@ -832,8 +686,7 @@ footer {
 
 /* Efecto hover para el icono de WhatsApp */
 .whatsapp-link:hover .whatsapp-img {
-  transform: scale(1.05);
-  /* Aumenta ligeramente el tamaño al pasar el cursor */
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el cursor */
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
@@ -854,19 +707,16 @@ footer {
     margin-bottom: 10px;
   }
   .navbar-toggler {
-    display: block;
-    /* Muestra el botón de hamburguesa en pantallas pequeñas */
+    display: block; /* Muestra el botón de hamburguesa en pantallas pequeñas */
   }
   .collapse {
-    display: none;
-    /* Oculta el menú por defecto */
+    display: none; /* Oculta el menú por defecto */
     flex-direction: column;
     width: 100%;
     margin-top: 1rem;
   }
   .collapse.show {
-    display: flex;
-    /* Muestra el menú cuando se le añade la clase 'show' */
+    display: flex; /* Muestra el menú cuando se le añade la clase 'show' */
   }
   .navbar-nav {
     flex-direction: column;
@@ -904,7 +754,6 @@ footer {
   }
   .lista-productos,
   .lista-ofertas {
-    grid-template-columns: 1fr;
-    /* Una columna en pantallas pequeñas */
+    grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
   }
 }/*# sourceMappingURL=styles.css.map */
