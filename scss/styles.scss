@@ -427,7 +427,7 @@ main {
 }
 
 .boton-comprar {
-    background-color: #1e7e34;
+    background-color: #007bff;
     transition: background-color 0.3s ease;
     color: #fff; /* Asegura que el texto siga siendo blanco al pasar el cursor */
     text-decoration: none; /* Elimina el subrayado al pasar el cursor */
@@ -440,7 +440,7 @@ main {
 }
 
 .boton-comprar:hover {
-    background-color: #1e7e34;
+    background-color: #007bff;
     transition: background-color 0.3s ease;
     color: #fff; /* Asegura que el texto siga siendo blanco al pasar el cursor */
     text-decoration: none; /* Elimina el subrayado al pasar el cursor */
@@ -717,7 +717,7 @@ footer p {
 }
 
 .btn-agregar {
-    background-color: #1e7e34;
+    background-color:#007bff;
     transition: background-color 0.3s ease;
     color: #fff; /* Asegura que el texto siga siendo blanco al pasar el cursor */
     text-decoration: none; /* Elimina el subrayado al pasar el cursor */
@@ -729,7 +729,7 @@ footer p {
     font-weight: bold; /* Mantiene el texto en negrita al pasar el cursor */
 }
 .btn-agregar:hover {
-    background-color: #1e7e34; /* Cambia el color de fondo al pasar el cursor */
+    background-color: #007bff; /* Cambia el color de fondo al pasar el cursor */
     transform: translateY(-3px); /* Efecto de "levantar" al pasar el cursor */
     text-decoration: none; /* Elimina el subrayado al pasar el cursor */
     font-size: 1.1rem; /* Aumenta ligeramente el tamaño del texto al pasar el cursor */
