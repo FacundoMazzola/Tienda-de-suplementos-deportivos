@@ -425,7 +425,7 @@ main {
 }
 
 .boton-comprar {
-  background-color: #1e7e34;
+  background-color: #007bff;
   transition: background-color 0.3s ease;
   color: #fff; /* Asegura que el texto siga siendo blanco al pasar el cursor */
   text-decoration: none; /* Elimina el subrayado al pasar el cursor */
@@ -438,7 +438,7 @@ main {
 }
 
 .boton-comprar:hover {
-  background-color: #1e7e34;
+  background-color: #007bff;
   transition: background-color 0.3s ease;
   color: #fff; /* Asegura que el texto siga siendo blanco al pasar el cursor */
   text-decoration: none; /* Elimina el subrayado al pasar el cursor */
@@ -715,7 +715,7 @@ footer p {
 }
 
 .btn-agregar {
-  background-color: #1e7e34;
+  background-color: #007bff;
   transition: background-color 0.3s ease;
   color: #fff; /* Asegura que el texto siga siendo blanco al pasar el cursor */
   text-decoration: none; /* Elimina el subrayado al pasar el cursor */
@@ -728,7 +728,7 @@ footer p {
 }
 
 .btn-agregar:hover {
-  background-color: #1e7e34; /* Cambia el color de fondo al pasar el cursor */
+  background-color: #007bff; /* Cambia el color de fondo al pasar el cursor */
   transform: translateY(-3px); /* Efecto de "levantar" al pasar el cursor */
   text-decoration: none; /* Elimina el subrayado al pasar el cursor */
   font-size: 1.1rem; /* Aumenta ligeramente el tamaño del texto al pasar el cursor */
@@ -881,7 +881,7 @@ footer p {
 }
 
 .btn-agregar-carrito {
-  background-color: #1e7e34;
+  background-color: #007bff;
   transition: background-color 0.3s ease;
   color: #fff; /* Asegura que el texto siga siendo blanco al pasar el cursor */
   text-decoration: none; /* Elimina el subrayado al pasar el cursor */
@@ -894,7 +894,7 @@ footer p {
 }
 
 .btn-agregar-carrito:hover {
-  background-color: #1e7e34; /* Cambia el color de fondo al pasar el cursor */
+  background-color: #007bff; /* Cambia el color de fondo al pasar el cursor */
   transform: translateY(-3px); /* Efecto de "levantar" al pasar el cursor */
   text-decoration: none; /* Elimina el subrayado al pasar el cursor */
   font-size: 1.1rem; /* Aumenta ligeramente el tamaño del texto al pasar el cursor */
@@ -1018,12 +1018,12 @@ hr {
 }
 
 .opciones-filtro select:focus {
-  border-color: #3498db;
+  border-color: #007bff;
   box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
 }
 
 .btn-aplicar-filtros {
-  background-color: #3498db; /* Color principal de tu marca */
+  background-color: #007bff; /* Color principal de tu marca */
   color: #fff;
   border: none;
   padding: 10px 25px;
@@ -1106,7 +1106,7 @@ hr {
 }
 
 .btn-agregar-carrito {
-  background-color: #1e7e34;
+  background-color:#007bff;
   transition: background-color 0.3s ease;
   color: #fff; /* Asegura que el texto siga siendo blanco al pasar el cursor */
   text-decoration: none; /* Elimina el subrayado al pasar el cursor */
@@ -1119,7 +1119,7 @@ hr {
 }
 
 .btn-agregar-carrito:hover {
-  background-color: #1e7e34; /* Cambia el color de fondo al pasar el cursor */
+  background-color: #007bff; /* Cambia el color de fondo al pasar el cursor */
   transform: translateY(-3px); /* Efecto de "levantar" al pasar el cursor */
   text-decoration: none; /* Elimina el subrayado al pasar el cursor */
   font-size: 1.1rem; /* Aumenta ligeramente el tamaño del texto al pasar el cursor */
@@ -1305,7 +1305,7 @@ hr {
 }
 
 .boton-enviar {
-  background-color: #28a745;
+  background-color: #007bff;
   color: white;
   padding: 15px 30px;
   border: none;
@@ -1320,7 +1320,7 @@ hr {
 }
 
 .boton-enviar:hover {
-  background-color: #218838;
+  background-color: #007bff;
   transform: translateY(-2px);
 }
 
