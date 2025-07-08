@@ -1703,6 +1703,7 @@ footer nav a:hover {
     display: block;
   }
   .collapse {
+    display: none;
     flex-direction: column;
     width: 100%;
     margin-top: 1rem;
