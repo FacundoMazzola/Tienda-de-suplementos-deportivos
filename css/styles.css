@@ -1666,7 +1666,7 @@ footer nav a:hover {
 }
 
 /*Responsividad */
-@media (max-width: 768px) {
+@media (max-width: 991.98px) {
   .container {
     padding: 10px;
   }
@@ -1695,8 +1695,15 @@ footer nav a:hover {
     margin-top: 1rem;
   }
 
+.collapse:not(.show) { /* Oculta el menú cuando no está "show" */
+    display: none !important;
+  }
+
   .collapse.show {
     display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
   }
 
   .navbar-nav {
