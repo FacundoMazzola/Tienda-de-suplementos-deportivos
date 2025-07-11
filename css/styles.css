@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Lato:wght@300;400;700&display=swap");
+
 /* Estilo general */
 body {
   font-family: poppins, sans-serif;
@@ -37,42 +38,26 @@ header {
   position: relative;
   padding: 10px 20px;
   z-index: 1000;
-  /* Asegura que el header esté por encima de otros elementos */
   margin-bottom: 20px;
-  /* Espacio debajo del header */
   border-bottom: 1px solid #e0e0e0;
-  /* Línea sutil debajo del header */
   font-family: poppins, sans-serif;
-  /* Fuente para el header */
   display: flex;
   flex-wrap: wrap;
-  /* Permite que los elementos se ajusten en pantallas pequeñas */
-  align-items: center;
-  /* Alinea los elementos verticalmente */
   padding: 10px 20px;
-  /* Espaciado interno del header */
-  gap: 20px;
-  /* Espacio entre los elementos del header */
   justify-content: space-between;
-  /* Alinea los elementos horizontalmente */
   background-color: #ffffff;
-  /* Fondo blanco para el header */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  /* Bordes redondeados para un toque moderno */
 }
 
 /* Estilos para el logo */
 .logo {
-  flex-shrink: 0;
-  /* Evita que el logo se achique */
+  flex-shrink: 0;  /* Evita que el logo se achique */
 }
 
 .logo img {
-  max-height: 100px;
-  /* Ajusta la altura máxima del logo */
-  width: auto;
-  /* Mantiene la proporción del logo */
+  max-height: 100px; /* Ajusta la altura máxima del logo */
+  width: auto;  /* Mantiene la proporción del logo */
 }
 
 /* Nav */
@@ -107,14 +92,13 @@ header {
   height: 1.5em;
   background-color: #333;
   -webkit-mask-size: contain;
-          mask-size: contain;
+  mask-size: contain;
   -webkit-mask-image: url("../img/menu-de-hamburguesas.png");
-          mask-image: url("../img/menu-de-hamburguesas.png");
-  /* Ruta al icono de hamburguesa */
+  mask-image: url("../img/menu-de-hamburguesas.png");
   -webkit-mask-repeat: no-repeat;
-          mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
   -webkit-mask-position: center;
-          mask-position: center;
+  mask-position: center;
 }
 
 /* Collapse */
@@ -142,7 +126,6 @@ header {
   font-size: 1rem;
   font-weight: 500;
   color: #000;
-  /* Color del texto de los enlaces */
   transition: color 0.3s ease;
 }
 
@@ -283,9 +266,7 @@ form.d-flex button:hover {
 
 .carrito img {
   height: 50px;
-  /* Ajusta el tamaño del icono del carrito */
   width: auto;
-  /* Mantiene la proporción de la imagen */
 }
 
 .carrito span#cantidad-carrito {
@@ -293,7 +274,6 @@ form.d-flex button:hover {
   top: -8px;
   right: -8px;
   background-color: #dc3545;
-  /* Un color de alerta */
   color: #fff;
   border-radius: 50%;
   padding: 5px 8px;
@@ -317,13 +297,11 @@ main {
 /* Sección Hero */
 #hero {
   background-color: #e9ecef;
-  padding: 0;
-  /* Quite el padding para que la imagen ocupe todo */
+  padding: 0; /* Quite el padding para que la imagen ocupe todo */
   text-align: center;
   position: relative;
   min-height: 75vh;
-  overflow: hidden;
-  /* Para contener la imagen */
+  overflow: hidden; /* Para contener la imagen */
 }
 
 .hero-content {
@@ -333,10 +311,8 @@ main {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  background-color: rgba(0, 0, 0, 0.432);
-  /* Fondo semitransparente */
-  color: #fff;
-  /* Cambiado a blanco para contraste */
+  background-color: rgba(0, 0, 0, 0.432); /* Fondo semitransparente */
+  color: #fff; /* Cambiado a blanco para contraste */
   text-align: center;
   padding: 30px;
   border-radius: 8px;
@@ -345,14 +321,12 @@ main {
 .hero-content h1 {
   font-size: 2.5em;
   margin-bottom: 15px;
-  color: #fff;
-  /* Cambiado a blanco para contraste */
+  color: #fff; /* Cambiado a blanco para contraste */
 }
 
 .hero-content p {
   font-size: 1.1em;
-  color: #eee;
-  /* Cambiado a gris claro para contraste */
+  color: #eee; /* Cambiado a gris claro para contraste */
   margin-bottom: 25px;
 }
 
@@ -364,24 +338,18 @@ main {
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
-  transition: background-color 0.3s ease;
+  transition: background-color 1.1s ease;
 }
 
 .boton-principal:hover {
   background-color: #0056b3;
   transition: background-color 0.3s ease;
-  color: #fff;
-  /* Asegura que el texto siga siendo blanco al pasar el cursor */
-  text-decoration: none;
-  /* Elimina el subrayado al pasar el cursor */
-  font-size: 1.1rem;
-  /* Aumenta ligeramente el tamaño del texto al pasar el cursor */
-  padding: 12px 25px;
-  /* Mantiene el padding al pasar el cursor */
-  border-radius: 5px;
-  /* Mantiene los bordes redondeados al pasar el cursor */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  /* Añade una sombra al botón al pasar el cursor */
+  color: #fff;   /* Asegura que el texto siga siendo blanco al pasar el cursor */
+  text-decoration: none; /* Elimina el subrayado al pasar el cursor */
+  font-size: 1.1rem; /* Aumenta ligeramente el tamaño del texto al pasar el cursor */
+  padding: 12px 25px; /* Mantiene el padding al pasar el cursor */
+  border-radius: 5px; /* Mantiene los bordes redondeados al pasar el cursor */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Añade una sombra al botón al pasar el cursor */
 }
 
 .hero-image {
@@ -397,7 +365,7 @@ main {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   z-index: 1;
   opacity: 0.9;
 }
@@ -427,7 +395,7 @@ main {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
   padding: 20px;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 1.1s ease, box-shadow 0.3s ease;
   /* para que haya una transición suave */
 }
 
@@ -483,7 +451,7 @@ main {
 
 .boton-comprar {
   background-color: #007bff;
-  transition: background-color 0.3s ease;
+  transition: background-color 1.1s ease;
   color: #fff;
   /* Asegura que el texto siga siendo blanco al pasar el cursor */
   text-decoration: none;
@@ -504,7 +472,7 @@ main {
 
 .boton-comprar:hover {
   background-color: #007bff;
-  transition: background-color 0.3s ease;
+  transition: background-color 1.1s ease;
   color: #fff;
   /* Asegura que el texto siga siendo blanco al pasar el cursor */
   text-decoration: none;
@@ -580,10 +548,12 @@ main {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
 }
+
 .oferta:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -604,7 +574,7 @@ main {
   /* Cambia el color del texto al pasar el cursor */
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
   /* Añade transición para el color de fondo y texto */
-  animation: fadeIn 0.5s ease-in-out;
+  animation: fadeIn 1.1s ease-in-out;
   /* Añade una animación de aparición suave */
   text-decoration: none;
   /* Elimina el subrayado al pasar el cursor */
@@ -639,11 +609,13 @@ main {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
+
 .seccion-nosotros h2 {
   font-size: 3.2em;
   /* Tamaño de fuente grande para el título */
@@ -810,7 +782,7 @@ footer p {
   height: 200px;
   /* Altura fija para uniformidad */
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   /* Asegura que la imagen se vea completa */
   border-radius: var(--border-radius);
   margin-bottom: 15px;
@@ -818,6 +790,7 @@ footer p {
 
 .tarjeta-oferta h3 {
   font-size: 1.3em;
+  text-decoration: none;
   margin-bottom: 10px;
   color: var(--color-primario);
 }
@@ -857,7 +830,7 @@ footer p {
 
 .btn-agregar {
   background-color: #007bff;
-  transition: background-color 0.3s ease;
+  transition: background-color 1.1s ease;
   color: #fff;
   /* Asegura que el texto siga siendo blanco al pasar el cursor */
   text-decoration: none;
@@ -919,7 +892,7 @@ footer p {
   /* Tamaño de los iconos de categoría */
   height: 80px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 50%;
   /* Para que sean circulares */
   margin-bottom: 10px;
@@ -990,7 +963,7 @@ footer p {
   overflow: hidden;
   text-align: center;
   padding: 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 1.1s ease, box-shadow 0.3s ease;
 }
 
 .tarjeta-producto-runner:hover {
@@ -1002,6 +975,7 @@ footer p {
 .tarjeta-producto-runner a {
   /* Renombrado */
   color: inherit;
+  text-decoration: none;
 }
 
 .tarjeta-producto-runner img {
@@ -1009,7 +983,7 @@ footer p {
   max-width: 100%;
   height: 200px;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   border-radius: var(--border-radius);
   margin-bottom: 15px;
 }
@@ -1017,6 +991,8 @@ footer p {
 .tarjeta-producto-runner h3 {
   /* Renombrado */
   font-size: 1.3em;
+  text-decoration: none;
+  text-decoration-line: none;
   margin-bottom: 8px;
   color: var(--color-primario);
 }
@@ -1024,6 +1000,7 @@ footer p {
 .tarjeta-producto-runner .descripcion {
   /* Renombrado */
   font-size: 0.9em;
+  text-decoration: none;
   color: var(--color-secundario);
   margin-bottom: 15px;
   min-height: 40px;
@@ -1166,7 +1143,7 @@ hr {
   height: 200px;
   /* Altura fija para las imágenes de categoría */
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   /* Recortar la imagen para que cubra el área */
   display: block;
 }
@@ -1174,9 +1151,9 @@ hr {
 .item-categoria h3 {
   font-size: 1.4em;
   color: #3498db;
-  /* Color de marca o un azul vibrante */
   padding: 15px 10px;
   margin: 0;
+  text-decoration: none;
 }
 
 /* --- Sección de Filtros --- */
@@ -1191,6 +1168,7 @@ hr {
 
 .filtros-indumentaria h3 {
   color: #2c3e50;
+  text-decoration: none;
   margin-bottom: 20px;
   font-size: 1.8em;
 }
@@ -1248,6 +1226,7 @@ hr {
 
 .listado-productos h2 {
   text-align: center;
+  text-decoration: none;
   color: #2c3e50;
   margin-bottom: 30px;
   font-size: 2em;
@@ -1289,13 +1268,14 @@ hr {
   height: 250px;
   /* Altura fija para las imágenes de producto */
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   display: block;
   margin-bottom: 15px;
 }
 
 .tarjeta-producto h3 {
   font-size: 1.3em;
+  text-decoration: none;
   color: #2c3e50;
   margin-bottom: 5px;
   padding: 0 15px;
@@ -1393,13 +1373,14 @@ hr {
   width: 100%;
   height: 200px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   display: block;
   margin-bottom: 15px;
 }
 
 .item-destacado h3 {
   font-size: 1.2em;
+  text-decoration: none;
   color: #2c3e50;
   margin-bottom: 5px;
   padding: 0 15px;
@@ -1452,6 +1433,7 @@ hr {
     transform: translateY(0);
   }
 }
+
 .seccion-formulario-contacto {
   animation-delay: 0.1s;
 }
@@ -1484,7 +1466,7 @@ hr {
   transform: translateX(-50%);
   width: 70px;
   height: 3px;
-  background-color: #28a745;
+  background-color: #007bff;
   border-radius: 2px;
 }
 
@@ -1688,10 +1670,12 @@ footer nav a:hover {
   .container {
     padding: 10px;
   }
+
   header {
     flex-direction: column;
     padding: 15px;
   }
+
   .logo img {
     height: 150px;
     /* Reducir tamaño del logo */
@@ -1699,49 +1683,62 @@ footer nav a:hover {
     /* Mantener proporción */
     margin-bottom: 10px;
   }
+
   .navbar-toggler {
     display: block;
   }
+
   .collapse {
     display: none;
     flex-direction: column;
     width: 100%;
     margin-top: 1rem;
   }
+
   .collapse.show {
     display: flex;
   }
+
   .navbar-nav {
     flex-direction: column;
     width: 100%;
     gap: 0;
   }
+
   .nav-item {
     width: 100%;
   }
+
   form.d-flex {
     flex-direction: column;
     width: 100%;
   }
+
   form.d-flex input,
   form.d-flex button {
     width: 100%;
   }
+
   .info-contacto {
     text-align: center;
     /* Centrar en móviles si se prefiere */
   }
+
   #hero {
     min-height: 500px;
     /* Reducir altura del hero */
   }
+
   .hero-content h1 {
     font-size: 2em;
   }
+
   .lista-productos,
   .lista-ofertas {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     /* Mantiene la grilla adaptable, ajusta minmax según necesites */
     gap: 20px;
   }
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/*# sourceMappingURL=styles.css.map */
