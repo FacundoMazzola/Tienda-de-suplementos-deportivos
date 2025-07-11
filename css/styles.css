@@ -93,8 +93,8 @@ header {
   background-color: #333;
   -webkit-mask-size: contain;
   mask-size: contain;
-  -webkit-mask-image: url("../img/menu-de-hamburguesas.png");
-  mask-image: url("../img/menu-de-hamburguesas.png");
+  -webkit-mask-image: url("../img/menu-hamburguesa.png");
+  mask-image: url("../img/menu-hamburguesa.png");
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   -webkit-mask-position: center;
