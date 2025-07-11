@@ -703,13 +703,12 @@ footer p {
 .hero-ofertas {
   background: linear-gradient(rgba(0, 0, 0, 0.123), rgba(243, 236, 236, 0.055)), url("../img/banner-ofertas.png") no-repeat center center/cover;
   position: relative;
-  color: white(--color-claro);
+  color: white; 
   padding: 80px 20px;
   text-align: center;
   border-radius: var(--border-radius);
   margin-bottom: 40px;
   animation: fadeIn 0.5s ease-in-out;
-  /* Animación de aparición suave */
 }
 
 .hero-ofertas h1 {
