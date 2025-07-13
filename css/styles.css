@@ -462,8 +462,6 @@ main {
 .producto .precio {
   font-size: 1.1em;
   font-weight: bold;
-  color: #28a745;
-  /* Un color para el precio */
   margin-bottom: 15px;
 }
 
