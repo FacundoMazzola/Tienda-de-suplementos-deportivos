@@ -30,7 +30,7 @@ body {
 
 /* Header */
 header {
-  background-color: #f7f7f7;
+  background-color: #e8f2f5;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,7 +45,6 @@ header {
   flex-wrap: wrap;
   padding: 10px 20px;
   justify-content: space-between;
-  background-color: #ffffff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
 }
@@ -65,7 +64,7 @@ header {
 
 /* Nav */
 .navbar {
-  background-color: #f8f9fa;
+  background-color: #e8f2f5;
   border-bottom: 1px solid #dee2e6;
   flex-grow: 1;
   margin: 0 20px;
@@ -410,7 +409,7 @@ main {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
   padding: 20px;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 1.1s ease, box-shadow 0.3s ease;
   /* para que haya una transición suave */
 }
 
@@ -1126,7 +1125,7 @@ hr {
   text-decoration: none;
   /* Quitar subrayado del enlace */
   color: #333;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 1.1s ease, box-shadow 0.3s ease;
   /* Efecto hover */
 }
 
@@ -1247,7 +1246,7 @@ hr {
   text-align: center;
   padding-bottom: 20px;
   /* Espacio interno inferior */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 1.1s ease, box-shadow 0.3s ease;
 }
 
 .tarjeta-producto:hover {
