@@ -410,7 +410,7 @@ main {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
   padding: 20px;
   text-align: center;
-  transition: transform 1.1s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   /* para que haya una transición suave */
 }
 
@@ -650,7 +650,8 @@ main {
 }
 
 .seccion-nosotros h2::after {
-  content: "";/* Contenido para el pseudo-elemento */
+  content: "";
+  /* Contenido para el pseudo-elemento */
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -703,7 +704,7 @@ footer p {
 .hero-ofertas {
   background: linear-gradient(rgba(0, 0, 0, 0.123), rgba(243, 236, 236, 0.055)), url("../img/banner-ofertas.png") no-repeat center center/cover;
   position: relative;
-  color: white; 
+  color: white;
   padding: 80px 20px;
   text-align: center;
   border-radius: var(--border-radius);
@@ -734,29 +735,31 @@ footer p {
 }
 
 .btn-cta {
-  background-color: white;
-  /* Cambiado a blanco para contraste */
-  color: rgb(255, 255, 255) --color-claro;
-  padding: 15px 30px;
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 25px;
   text-decoration: none;
+  border-radius: 5px;
   font-weight: bold;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  /* Transición para hover */
+  transition: background-color 1.1s ease;
 }
 
 .btn-cta:hover {
-  background-color: rgba(4, 0, 255, 0.466);
-  /* Cambia el color de fondo al pasar el cursor */
-  transform: translateY(-3px);
-  /* Efecto de "levantar" al pasar el cursor */
+  background-color: #0056b3;
+  transition: background-color 0.3s ease;
+  color: #fff;
+  /* Asegura que el texto siga siendo blanco al pasar el cursor */
   text-decoration: none;
   /* Elimina el subrayado al pasar el cursor */
   font-size: 1.1rem;
   /* Aumenta ligeramente el tamaño del texto al pasar el cursor */
-  padding: 15px 30px;
+  padding: 12px 25px;
   /* Mantiene el padding al pasar el cursor */
-  border-radius: var(--border-radius);
+  border-radius: 5px;
   /* Mantiene los bordes redondeados al pasar el cursor */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Añade una sombra al botón al pasar el cursor */
 }
 
 /* --- Sección de Ofertas Destacadas (Grid) --- */
@@ -776,12 +779,13 @@ footer p {
   text-align: center;
   padding: 20px;
   position: relative;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 1.1s ease, box-shadow 1ms ease;
   /* Transición para el hover */
 }
 
 .tarjeta-oferta:hover {
   transform: translateY(-8px);
+  /* Efecto de "levantar" */
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   /* Sombra más pronunciada */
 }
@@ -913,20 +917,6 @@ footer p {
 }
 
 /* Sección de Runners */
-.migas-de-pan-runner {
-  font-size: 0.9em;
-  color: var(--color-secundario);
-  margin-top: 15px;
-}
-
-.migas-de-pan-runner a {
-  color: var(--color-oscuro);
-  text-decoration: underline;
-}
-
-.migas-de-pan-runner a:hover {
-  color: var(--color-primario);
-}
 
 /* Filtros y opciones de ordenación de productos */
 .filtros-productos-runner {
@@ -977,7 +967,7 @@ footer p {
 
 .tarjeta-producto-runner:hover {
   /* Renombrado */
-  transform: translateY(-8px);
+  transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
